@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Bruxelles</title>
+    <script src="script.js"></script>
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,21 +20,54 @@
             <img class="logoBruxelles" src="images/Bruxelles-stad.png" alt=""> 
 
             <nav class="liste">
-                <a href="">ACTUALITÉ</a><br>
-                <a href="">NEWSPAPER</a><br>
-                <a href="">CONTACT</a><br>
-                <a href="https://www.belgium.be/fr/services_en_ligne">PORTAIL</a><br>
+                <a href="">ACTUALITÉS</a>
+                <a href="https://www.bruxelles.be/sites/default/files/bxl/programme_2023.pdf">NEWSPAPER</a>
+                <a href="">ÉVENEMENTS</a>
+                <a href="">CONTACT</a>
+                <a href="https://www.belgium.be/fr/services_en_ligne">PORTAIL</a>
                 
 
         </header>
 
         <div class="panorama">
-            <img class="grandeRoue" src="images/bruxelles-panorama-de-grand-place-dans-le-beau-jour-d-été-belgi-98769109.jpg" alt="">
-            <input type="search" id="site-search" name="q">
-            <button id="frittes">Frittes</button>
-        </div>
-           
+            <img src="images/bruxelles-panorama-de-grand-place-dans-le-beau-jour-d-été-belgi-98769109.jpg" alt="Votre image" class="grandeRoue">
+            <div class="search-bar">
+              <input type="text" placeholder="Rechercher..." class="search-input">
+              <button class="search-button">Rechercher</button>
+            </div>
+          </div>
+        
+          
 
+        <div class="decouvrezBruxelles">
+            <h2>DÉCOUVREZ BRUXELLES</h2>
+        </div>
+
+        <div class="accueilPresentation">
+            <img class="accueilImages" src="images/mim-terrasse-5-e1560521252278-800x495.jpg" alt="">
+            <div class="alignementText">
+            <p class="accueilTextes"><h1>La terrasse du MIM</h1>Tout en haut du musée des Instruments de Musique, vous découvrirez un des meilleurs rooftops de Bruxelles. Ouvert toute l'année, le restaurant vous propose un déjeuner avec vue et même un brunch le dimanche.</p>
+            </div>
+        </div><br>
+
+        <div class="accueilPresentation">
+            <img class="accueilImages" src="images/sainte-catherine-grande-roue-2018-800x519.jpg" alt="">
+            <div class="alignementText">
+            <p class="accueilTextes"><h1>La grande roue aux Plaisirs d'hiver</h1>Après les vues sur Bruxelles en saison estivale, voici celle de l'hiver. Et préparez-vous à monter tout en haut de la grande roue pour contempler les petits chalets du marché de Noël et le quartier Sainte-Catherine.</p>
+            </div>
+        </div><br>
+
+        <div class="accueilPresentation">
+            <img class="accueilImages" src="images/bruxelles-depuis-la-grande-roue-e1570556994667-800x537.jpg" alt="">
+            <div class="alignementText">
+            <p class="accueilTextes"><h1>La place Poelaert</h1>Au pied du Palais de Justice, la place Poelaert est un endroit très fréquenté pour sa vue dégagée. De là, vous pourrez apercevoir le quartier des Marolles, la Grand-Place, la basilique de Koekelberg et même sur l'Atomium.</p>
+            </div>
+        </div><br>
+        
+        
+    <button onclick="scrollToTop()" id="myBtn">Revenir en haut</button>
+        
+        </div>
     </body>
 
 </html>

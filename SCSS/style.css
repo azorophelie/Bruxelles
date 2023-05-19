@@ -3,8 +3,8 @@
   justify-content: space-around;
   align-items: center;
   color: black;
-  width: auto;
-  padding: 1em;
+  width: 96.1em;
+  padding: 0.5em;
   background-color: black;
   font-size: 1.2em;
   font-family: "Abril Fatface", cursive;
@@ -21,10 +21,18 @@
 
 body {
   margin: 0%;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  color: yellow;
 }
 
 .liste {
@@ -34,15 +42,93 @@ body a {
 }
 
 .panorama .grandeRoue {
-  width: 120em;
+  width: 116.5em;
   height: 30em;
   position: relative;
 }
-.panorama #site-search {
-  position: relative;
-  align-items: center;
+
+.decouvrezBruxelles {
+  margin-left: 20em;
+}
+
+.accueilPresentation {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  background-color: rgba(234, 234, 234, 0.887);
+  margin-left: 20em;
+  margin-right: 20em;
+}
+.accueilPresentation .accueilImages {
+  width: 38em;
+  height: 20em;
+}
+.accueilPresentation .accueilTextes {
+  padding-left: 1em;
+}
+.accueilPresentation .alignementText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 36em;
 }
 
 label {
   display: block;
+}
+
+.search-bar {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 95px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.search-input {
+  width: 97.5%;
+  padding: 5px;
+  border: solid black 2px;
+  height: 20px;
+}
+
+.search-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 100;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #777;
 }/*# sourceMappingURL=style.css.map */

@@ -2,13 +2,39 @@
     
     
     .grandeRoue {
-        width: 120em;
+        width: 116.5em;
         height: 30em;
         position:relative;
-    }
-    #site-search {
-        position:relative;
-        align-items: center;
+    }   
+}
+
+.decouvrezBruxelles {
+    margin-left: 20em;
+}
+
+.accueilPresentation {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    background-color: rgba(234, 234, 234, 0.887);
+    margin-left: 20em;
+    margin-right: 20em;
+    .accueilImages {
+        
+        width: 38em;
+        height: 20em;
+        
     }
 
+    .accueilTextes {  
+        padding-left: 1em;
+    }
+
+    .alignementText {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2em;
+        margin-right: 2em;
+        width: 36em;
+    }
 }
