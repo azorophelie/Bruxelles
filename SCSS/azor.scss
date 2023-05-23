@@ -1,3 +1,10 @@
+@media screen and (min-width: 1024px){
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
 body {
   margin: 0;
 }
@@ -100,7 +107,7 @@ body {
     height: 55vh;
     width: 55vh;
     margin-left: 50%;
-    margin-top: -3.3%;
+    margin-top: -2.8%;
     
 
 }
@@ -138,7 +145,7 @@ body {
     opacity: 1;
 }
 .agenda {
-    position: relative;
+position: relative;
 border: #e2e2e0 1px solid;
 background-color: #e2e2e0;
 margin-left: 56%;
@@ -168,56 +175,71 @@ width: 15%;
 footer{
     border: 1px grey solid;
     height: 50%;
-    
     margin-top: 50%;
     background-color: grey;
+    overflow: hidden;
+    color: white;
 }
+
 .animalsfriends, .patrimoine {
     filter: brightness(0%);
     width: 70px;  
   
 }
-.animalsfriends{
-    float: right;
-    margin-right:20%;
-    margin-top: -2.5%;
+
+   
+   
+.animalsfriends {
+    margin-left: 80%;
 }
 .citybxl {
     width: 150px;
-    margin-top: -2.1%;
-    float: right;
-    margin-right: -13%;
+    margin-left: 73%;
     
+  
 }
 .unesco {
   width:110px;
-  margin-left: 0;
-padding-top: -2%; }
+ 
+ margin-left: 5%;
+  }
   
 .patrimoine {
-    margin-left: 14%;  
+    margin-left:6%;
+    margin-top:-5%;
+    padding-top: 1%;
 }
 .brucity {
     text-align: center;
 }
 
 ul {
-  text-decoration: underline;
-  text-transform: uppercase;
-  list-style-type: none;
-  color: black;
-    margin: 0;
-    padding: 0;
+    border:1px black solid;
+    box-shadow:-1px -1px 13px hsla(0, 0%, 9%, 0.25);
+    width:54%;
+    height: 35px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: black;
+    margin-left: 22%;
+    margin-top: -7%;
+    padding-top: 0.6%;
     overflow: hidden;
-    position: fixed right;
-    margin-right: 28.3%;
-    margin-top: -2.8%;
+    
+   
+    
 }
 li {
-  display: block;
-  margin-right: 30px;
+  display: inline;
+  margin-right: 25px;
   color: black;
-  float: right;
+  
+  
     
 }
 a:link {
@@ -240,6 +262,8 @@ a:active  {
 }
 .obcn {
     margin-left: 45%;
+    margin-top: 5%;
+    
 }
 .strg {
     text-decoration: underline;
