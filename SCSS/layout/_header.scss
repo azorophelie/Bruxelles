@@ -1,0 +1,25 @@
+.bvnBruxelles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    width: 96.1em;
+    padding: 0.5em;
+    background-color: black;
+    font-size: 1.2em;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    .logoBruxelles {
+        width: 95px;
+        height: 55px;
+        margin-left: 40px;
+        margin-right: 40px;
+        
+      }
+    .liste {
+        padding-right: 3em;
+    }
+  }

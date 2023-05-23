@@ -1,0 +1,92 @@
+.panorama {
+    
+    .grandeRoue {
+        width: 116.5em;
+        height: 30em;
+        position: relative;
+        transition: filter 0.3s ease-in-out;
+    }   
+    .grandeRoue:hover {
+        filter: brightness(115%);
+    }
+    .bvn {
+        
+        z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 8px;
+    right: 0;
+    top: 26%;
+    color: rgb(0, 0, 0);
+    width: 70%;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255);
+    }
+}
+
+.decouvrezBruxelles {
+    margin-left: 20em;
+}
+
+.accueilPresentation {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    background-color: rgba(234, 234, 234, 0.887);
+    margin-left: 20em;
+    margin-right: 20em;
+    .accueilImages {
+        
+        width: 38em;
+        height: 20em;
+        transition: filter 0.3s ease-in-out;
+    }
+
+    .accueilImages:hover {
+        filter: brightness(115%);
+    }
+
+
+    .accueilTextes {  
+        padding-left: 1em;
+    }
+
+    .alignementText {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2em;
+        margin-right: 2em;
+        width: 36em;
+    }
+}
+
+/* page événements */
+
+.eventBx {
+    margin-left: 20em;
+    width: 60%;
+    text-align: justify;
+    margin-right: 20em;
+    justify-content: center;
+    
+}
+
+.marcheBx {
+    width: 60%;
+    height: 60%;
+    margin-left: 20em;
+    margin-right: 20em;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.marcheBx:hover {
+    transform: scale(1.2);
+}
+
+.marchesBrx {
+    width: 100%;
+    height: 60%;
+    
+    margin-right: 20em;
+}

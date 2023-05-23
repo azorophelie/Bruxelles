@@ -1,0 +1,24 @@
+body {
+    margin: 0%;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5em;
+    a {
+        text-decoration: none;
+        color: white;
+        
+        
+    }
+}
+
+a:hover {
+    color: yellow;
+}
+
+.liste {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}

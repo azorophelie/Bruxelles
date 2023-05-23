@@ -1,0 +1,244 @@
+@charset "UTF-8";
+.bvnBruxelles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  width: 96.1em;
+  padding: 0.5em;
+  background-color: black;
+  font-size: 1.2em;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.bvnBruxelles .logoBruxelles {
+  width: 95px;
+  height: 55px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.bvnBruxelles .liste {
+  padding-right: 3em;
+}
+
+body {
+  margin: 0%;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 5em;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.liste {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.panorama .grandeRoue {
+  width: 116.5em;
+  height: 30em;
+  position: relative;
+  transition: filter 0.3s ease-in-out;
+}
+.panorama .grandeRoue:hover {
+  filter: brightness(115%);
+}
+.panorama .bvn {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 8px;
+  right: 0;
+  top: 26%;
+  color: rgb(0, 0, 0);
+  width: 70%;
+  text-shadow: -1px -1px 0 rgb(255, 255, 255);
+}
+
+.decouvrezBruxelles {
+  margin-left: 20em;
+}
+
+.accueilPresentation {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  background-color: rgba(234, 234, 234, 0.887);
+  margin-left: 20em;
+  margin-right: 20em;
+}
+.accueilPresentation .accueilImages {
+  width: 38em;
+  height: 20em;
+  transition: filter 0.3s ease-in-out;
+}
+.accueilPresentation .accueilImages:hover {
+  filter: brightness(115%);
+}
+.accueilPresentation .accueilTextes {
+  padding-left: 1em;
+}
+.accueilPresentation .alignementText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 36em;
+}
+
+/* page événements */
+.eventBx {
+  margin-left: 20em;
+  width: 60%;
+  text-align: justify;
+  margin-right: 20em;
+  justify-content: center;
+}
+
+.marcheBx {
+  width: 60%;
+  height: 60%;
+  margin-left: 20em;
+  margin-right: 20em;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.marcheBx:hover {
+  transform: scale(1.2);
+}
+
+.marchesBrx {
+  width: 100%;
+  height: 60%;
+  margin-right: 20em;
+}
+
+.search-bar {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 95px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.search-input {
+  width: 97.5%;
+  padding: 5px;
+  border: solid black 2px;
+  height: 20px;
+}
+
+.search-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 100;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #777;
+}
+
+.formNous {
+  margin-left: 30%;
+  font-size: 20px;
+  line-height: 25px;
+  width: 900px;
+  text-align: justify;
+}
+
+.formulaire {
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: solid black 2px;
+  padding: 50px;
+  background-color: rgba(234, 234, 234, 0.887);
+}
+.formulaire .logoBruxelles {
+  width: 150px;
+  height: 75px;
+}
+
+.envoyer {
+  width: 10em;
+  background-color: yellow;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 40%;
+}
+
+.ameliorations {
+  width: 84.5%;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.contactDirect {
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+  padding: 2em;
+  width: 75%;
+  border: solid black 2px;
+  border-radius: 5%;
+  background-color: rgba(234, 234, 234, 0.887);
+}
+.contactDirect a {
+  text-decoration: none;
+  color: black;
+}
+.contactDirect a:hover {
+  color: rgba(255, 0, 0, 0.467);
+}
+
+.contactTel {
+  width: 84.5%;
+}/*# sourceMappingURL=style.css.map */
