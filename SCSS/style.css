@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   color: black;
-  width: 96.1em;
+  width: 95.45em;
   padding: 0.5em;
   background-color: black;
   font-size: 1.2em;
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .panorama .grandeRoue {
-  width: 116.5em;
+  width: 115.75em;
   height: 30em;
   position: relative;
   transition: filter 0.3s ease-in-out;
@@ -101,10 +101,18 @@ a:hover {
   width: 36em;
 }
 
+.mapBruxelles {
+  margin-left: 20em;
+}
+.mapBruxelles .maps {
+  margin-right: 20px;
+}
+
 /* page événements */
 .eventBx {
-  margin-left: 20em;
-  width: 65%;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 67.1%;
   text-align: justify;
   justify-content: center;
 }
@@ -131,11 +139,27 @@ a:hover {
   line-height: 25px;
 }
 
-.mapBruxelles {
-  margin-left: 20em;
+.eventVoisinsBx {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  gap: 1em;
+  line-height: 25px;
 }
-.mapBruxelles .maps {
-  margin-right: 20px;
+
+.afficheVoisins {
+  transition: transform 0.3s;
+}
+
+.afficheVoisins:hover {
+  transform: scale(1.4);
+}
+
+.youtubeVoisin {
+  margin-left: 20%;
 }
 
 .search-bar {

@@ -1,7 +1,7 @@
 .panorama {
     
     .grandeRoue {
-        width: 116.5em;
+        width: 115.75em;
         height: 30em;
         position: relative;
         transition: filter 0.3s ease-in-out;
@@ -63,11 +63,20 @@
     }
 }
 
+.mapBruxelles {
+    margin-left: 20em;
+    .maps{
+        margin-right: 20px;
+        
+    }
+}
+
 /* page événements */
 
 .eventBx {
-    margin-left: 20em;
-    width: 65%;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 67.1%;
     text-align: justify;
     justify-content: center;
     
@@ -93,16 +102,35 @@
 }
 
 }
-
 .descriptionEvent {
     width: 90%;
     line-height: 25px;
 }
 
-.mapBruxelles {
-    margin-left: 20em;
-    .maps{
-        margin-right: 20px;
-        
-    }
+.eventVoisinsBx {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap: 1em;
+    line-height: 25px;
+   
 }
+
+.afficheVoisins {
+    transition: transform 0.3s;
+}
+
+.afficheVoisins:hover {
+    transform: scale(1.4);
+}
+
+.youtubeVoisin {
+    margin-left: 20%;
+}
+
+
+
+
