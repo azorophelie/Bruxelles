@@ -87,6 +87,8 @@ a:hover {
 }
 .accueilPresentation .accueilImages:hover {
   filter: brightness(115%);
+  transform: scale(1.2);
+  transition: transform 0.3s;
 }
 .accueilPresentation .accueilTextes {
   padding-left: 1em;
@@ -102,29 +104,38 @@ a:hover {
 /* page événements */
 .eventBx {
   margin-left: 20em;
-  width: 60%;
+  width: 65%;
   text-align: justify;
-  margin-right: 20em;
   justify-content: center;
 }
 
-.marcheBx {
-  width: 60%;
-  height: 60%;
-  margin-left: 20em;
-  margin-right: 20em;
-  justify-content: center;
+.eventMarcheBx {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+.eventMarcheBx .marcheBx {
+  width: 38%;
   transition: transform 0.3s;
 }
-
-.marcheBx:hover {
-  transform: scale(1.2);
+.eventMarcheBx .marcheBx:hover {
+  transform: scale(2);
+}
+.eventMarcheBx .marchesBrx {
+  width: 48%;
+  height: 55%;
 }
 
-.marchesBrx {
-  width: 100%;
-  height: 60%;
-  margin-right: 20em;
+.descriptionEvent {
+  width: 90%;
+  line-height: 25px;
+}
+
+.mapBruxelles {
+  margin-left: 20em;
+}
+.mapBruxelles .maps {
+  margin-right: 20px;
 }
 
 .search-bar {
@@ -208,7 +219,7 @@ a:hover {
 
 .envoyer {
   width: 10em;
-  background-color: yellow;
+  background-color: white;
   padding-top: 1em;
   padding-bottom: 1em;
   margin-left: 40%;
