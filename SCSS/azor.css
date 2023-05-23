@@ -83,6 +83,21 @@ body {
   width: 10px;
 }
 
+.slider a {
+  /* Set the link styles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.slider span {
+  /* Set the styles for the text */
+  margin-top: 10px;
+}
+
 .sliderag {
   display: flex;
   aspect-ratio: 16/9;
@@ -93,7 +108,7 @@ body {
   height: 55vh;
   width: 55vh;
   margin-left: 50%;
-  margin-top: -3.3%;
+  margin-top: -2.8%;
 }
 
 .sliderag img {
@@ -164,6 +179,8 @@ footer {
   height: 50%;
   margin-top: 50%;
   background-color: grey;
+  overflow: hidden;
+  color: white;
 }
 
 .animalsfriends, .patrimoine {
@@ -172,26 +189,23 @@ footer {
 }
 
 .animalsfriends {
-  float: right;
-  margin-right: 20%;
-  margin-top: -2.5%;
+  margin-left: 80%;
 }
 
 .citybxl {
   width: 150px;
-  margin-top: -2.1%;
-  float: right;
-  margin-right: -13%;
+  margin-left: 72.4%;
 }
 
 .unesco {
   width: 110px;
-  margin-left: 0;
-  padding-top: -2%;
+  margin-left: 5%;
 }
 
 .patrimoine {
-  margin-left: 14%;
+  margin-left: 6%;
+  margin-top: -5%;
+  padding-top: 1%;
 }
 
 .brucity {
@@ -199,23 +213,28 @@ footer {
 }
 
 ul {
+  border: 1px black solid;
+  box-shadow: -1px -1px 13px hsla(0, 0%, 9%, 0.25);
+  width: 54%;
+  height: 35px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
   text-decoration: underline;
   text-transform: uppercase;
   list-style-type: none;
   color: black;
-  margin: 0;
-  padding: 0;
+  margin-left: 22%;
+  margin-top: -7%;
+  padding-top: 0.6%;
   overflow: hidden;
-  position: fixed right;
-  margin-right: 28.3%;
-  margin-top: -2.8%;
 }
 
 li {
-  display: block;
-  margin-right: 30px;
+  display: inline;
+  margin-right: 25px;
   color: black;
-  float: right;
 }
 
 a:link {
@@ -241,6 +260,7 @@ a:active {
 
 .obcn {
   margin-left: 45%;
+  margin-top: 5%;
 }
 
 .strg {

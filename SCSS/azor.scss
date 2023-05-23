@@ -97,6 +97,24 @@ body {
 #slider-3 img {
     width: 10px;
 }
+
+.slider a {
+    /* Set the link styles */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+  }
+  .slider span {
+    /* Set the styles for the text */
+    margin-top: 10px;
+  }
+
+
+  
+  
 .sliderag {
     display: flex;
     aspect-ratio: 16 / 9;
@@ -194,7 +212,8 @@ footer{
 }
 .citybxl {
     width: 150px;
-    margin-left: 73%;
+    margin-left: 72.4%;
+    
     
   
 }

@@ -70,6 +70,7 @@ a:hover {
 
 .decouvrezBruxelles {
   margin-left: 20em;
+  margin-top: 35em;
 }
 
 .accueilPresentation {
@@ -277,3 +278,275 @@ a:hover {
 .contactTel {
   width: 84.5%;
 }/*# sourceMappingURL=style.css.map */
+
+
+
+.container {
+  padding: 2rem;
+  
+}
+.kfda {
+  position: relative;
+  border: #e2e2e0 1px solid;
+  background-color: #e2e2e0;
+  margin-left: 29%;
+  padding: 0.6%;
+  width: 10%;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: -30%;
+  width: 15%;
+  }
+ 
+
+  
+ 
+  
+.slider-wrapper {
+  position: relative;
+
+
+}
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 1rem;
+  height: 57vh;
+  width: 57vh;
+  margin-left: 20em;
+  margin-top: 10%;
+  
+
+}
+
+.slider img {
+  
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  transform: scale(1);
+  
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  left: 37%;
+  bottom: -67%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: grey;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  
+  
+}
+.slider-nav a:hover {
+  opacity: 1;
+}
+#slider-3 img {
+  width: 10px;
+}
+
+.slider a {
+  /* Set the link styles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+}
+.slider span {
+  /* Set the styles for the text */
+  margin-top: 10px;
+}
+
+
+
+
+.sliderag {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 1rem;
+  height: 57vh;
+  width: 57vh;
+  margin-left: 52%;
+  margin-top: -3%;
+  
+
+}
+.sliderag img {
+  
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  transform: scale(1);
+  
+  
+
+}
+
+.slider-navag {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  left: 65%;
+  bottom: -67%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-navag a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: grey;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  
+  
+}
+.slider-navag a:hover {
+  opacity: 1;
+}
+.agenda {
+position: relative;
+border: #e2e2e0 1px solid;
+background-color: #e2e2e0;
+margin-left: 58%;
+padding: 0.6%;
+width: 10%;
+border-bottom-right-radius: 30px;
+border-top-right-radius: 30px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+margin-top: -30%;
+width: 15%;
+}
+
+.vac1{
+  overflow: hidden;
+}
+.fa-twitter {
+  font-size: 30px;
+  color: black;
+  margin-left: 43%;
+}
+.fa-facebook-f, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
+  font-size: 30px;
+  color: black;
+  padding: 10px;
+}
+footer{
+  border: 1px grey solid;
+  height: 50%;
+  margin-top: 30%;
+  background-color: grey;
+  overflow: hidden;
+  color: white;
+  
+}
+
+.animalsfriends, .patrimoine {
+  filter: brightness(0%);
+  width: 70px;  
+
+}
+
+ 
+ 
+.animalsfriends {
+  margin-left: 80%;
+}
+.citybxl {
+  width: 150px;
+  margin-left: 72.4%;
+  
+  
+
+}
+.unesco {
+width:110px;
+
+margin-left: 5%;
+}
+
+.patrimoine {
+  margin-left:6%;
+  margin-top:-5%;
+  padding-top: 1%;
+}
+.brucity {
+  text-align: center;
+}
+
+ul {
+  border:1px black solid;
+  box-shadow:-1px -1px 13px hsla(0, 0%, 9%, 0.25);
+  width:54%;
+  height: 35px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style-type: none;
+  color: black;
+  margin-left: 22%;
+  margin-top: -7%;
+  padding-top: 0.6%;
+  overflow: hidden;
+  
+ 
+  
+}
+li {
+display: inline;
+margin-right: 20px;
+color: black;
+
+
+  
+}
+a:link {
+  color:white;
+}
+a:visited {
+  color: white;
+}
+a:hover{
+  color: white;
+}
+a:active  {
+  color: black;
+}
+
+
+.fa-brands:hover {
+  background-color: white;
+  opacity: 0.2;
+}
+.obcn {
+  margin-left: 45%;
+  margin-top: 5%;
+  
+}
+.strg {
+  text-decoration: underline;
+  font-weight: bold;
+}
