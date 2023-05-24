@@ -1,23 +1,61 @@
+// barre de recherchee 
 .search-bar {
-    position: absolute;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 450px; 
-    height: 95px;
-    
-    border-radius: 5px;
-    padding: 10px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-  }
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 95px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.search-input {
+  width: 97.5%;
+  padding: 5px;
+  border: solid black 2px;
+  height: 20px;
+}
+
+.search-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+//bouton revenir en haut
+#myBtn {
   
-  .search-input {
-    width: 97.5%;
-    padding: 5px;
-    border: solid black 2px;
-    height: 20px;
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 100;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #777;
+}
   
   .search-button {
     display: block;
@@ -36,22 +74,21 @@
   }
 
 //bouton revenir en haut
-  #myBtn {
-    
-    position: fixed;
-    bottom: 20px;
-    right: 15px;
-    z-index: 100;
-    font-size: 14px;
-    border: none;
-    outline: none;
-    background-color: #000000;
-    color: white;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 4px;
-  }
-  
-  #myBtn:hover {
-    background-color: #777;
-  }
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 100;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #777;
+}

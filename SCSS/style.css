@@ -1,26 +1,29 @@
-@charset "UTF-8";
-.bvnBruxelles {
+/*-------------HEADER------------*/
+.bivnBruxelles {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: black;
+  color: aqua;
   width: 95.45em;
   padding: 0.5em;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   font-size: 1.2em;
   font-family: "Abril Fatface", cursive;
   font-family: "Anuphan", sans-serif;
   font-family: "Fira Sans", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
-.bvnBruxelles .logoBruxelles {
+
+.bivnBruxelles .logoBruxelles {
   width: 95px;
   height: 55px;
-  margin-left: 40px;
+  margin-left: 35px;
   margin-right: 40px;
 }
-.bvnBruxelles .liste {
+
+.bivnBruxelles .liste {
   padding-right: 3em;
+  margin-right: 6%;
 }
 
 body {
@@ -29,8 +32,8 @@ body {
   font-family: "Anuphan", sans-serif;
   font-family: "Fira Sans", sans-serif;
   font-family: "Montserrat", sans-serif;
-  padding-bottom: 5em;
 }
+
 body a {
   text-decoration: none;
   color: white;
@@ -52,9 +55,11 @@ a:hover {
   position: relative;
   transition: filter 0.3s ease-in-out;
 }
+
 .panorama .grandeRoue:hover {
   filter: brightness(115%);
 }
+
 .panorama .bvn {
   z-index: 1;
   position: absolute;
@@ -68,9 +73,19 @@ a:hover {
   text-shadow: -1px -1px 0 rgb(255, 255, 255);
 }
 
+button {
+  background-color: black;
+  color: white;
+  padding: 0 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+}
+
+/* -------------------ACCEUIL PRESENTATION-------------------- */
 .decouvrezBruxelles {
   margin-left: 20em;
-  margin-top: 35em;
 }
 
 .accueilPresentation {
@@ -81,19 +96,23 @@ a:hover {
   margin-left: 20em;
   margin-right: 20em;
 }
+
 .accueilPresentation .accueilImages {
   width: 38em;
   height: 20em;
   transition: filter 0.3s ease-in-out;
 }
+
 .accueilPresentation .accueilImages:hover {
   filter: brightness(115%);
   transform: scale(1.2);
   transition: transform 0.3s;
 }
+
 .accueilPresentation .accueilTextes {
   padding-left: 1em;
 }
+
 .accueilPresentation .alignementText {
   display: flex;
   flex-direction: column;
@@ -105,11 +124,12 @@ a:hover {
 .mapBruxelles {
   margin-left: 20em;
 }
+
 .mapBruxelles .maps {
   margin-right: 20px;
 }
 
-/* page événements */
+/* PAGE EVENEMENTS */
 .eventBx {
   margin-left: 20%;
   margin-right: 20%;
@@ -123,13 +143,16 @@ a:hover {
   flex-direction: row;
   gap: 2%;
 }
+
 .eventMarcheBx .marcheBx {
   width: 38%;
   transition: transform 0.3s;
 }
+
 .eventMarcheBx .marcheBx:hover {
   transform: scale(2);
 }
+
 .eventMarcheBx .marchesBrx {
   width: 48%;
   height: 55%;
@@ -218,6 +241,41 @@ a:hover {
   background-color: #777;
 }
 
+.search-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 100;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #777;
+}
+
 .formNous {
   margin-left: 30%;
   font-size: 20px;
@@ -237,6 +295,7 @@ a:hover {
   padding: 50px;
   background-color: rgba(234, 234, 234, 0.887);
 }
+
 .formulaire .logoBruxelles {
   width: 150px;
   height: 75px;
@@ -267,243 +326,151 @@ a:hover {
   border-radius: 5%;
   background-color: rgba(234, 234, 234, 0.887);
 }
+
 .contactDirect a {
   text-decoration: none;
   color: black;
 }
+
 .contactDirect a:hover {
   color: rgba(255, 0, 0, 0.467);
 }
 
 .contactTel {
   width: 84.5%;
-}/*# sourceMappingURL=style.css.map */
-
-
-
-.container {
-  padding: 2rem;
-  
 }
-.kfda {
+
+/*---------------SLIDER ACTU ET AGENDA------------------*/
+.titleactu {
+  margin-left: 21.1%;
+}
+
+.gallery {
   position: relative;
-  border: #e2e2e0 1px solid;
-  background-color: #e2e2e0;
-  margin-left: 29%;
-  padding: 0.6%;
-  width: 10%;
-  border-bottom-right-radius: 30px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin-top: -30%;
-  width: 15%;
+  width: 500px;
+  height: 400px;
+  transform-style: preserve-3d;
+  animation: animate 50s linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateY(0deg);
   }
- 
-
-  
- 
-  
-.slider-wrapper {
-  position: relative;
-
-
+  100% {
+    transform: rotateY(360deg);
+  }
 }
-.slider {
+.container {
   display: flex;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  scroll-snap-type: x mandatory;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 1rem;
-  height: 57vh;
-  width: 57vh;
-  margin-left: 20em;
-  margin-top: 10%;
-  
-
-}
-
-.slider img {
-  
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-  transform: scale(1);
-  
-}
-
-.slider-nav {
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  left: 37%;
-  bottom: -67%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-.slider-nav a {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: grey;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-  
-  
-}
-.slider-nav a:hover {
-  opacity: 1;
-}
-#slider-3 img {
-  width: 10px;
-}
-
-.slider a {
-  /* Set the link styles */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-decoration: none;
-  color: #000;
-}
-.slider span {
-  /* Set the styles for the text */
-  margin-top: 10px;
+  min-height: 60vh;
+  margin-left: 13em;
 }
 
-
-
-
-.sliderag {
-  display: flex;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  scroll-snap-type: x mandatory;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 1rem;
-  height: 57vh;
-  width: 57vh;
-  margin-left: 52%;
-  margin-top: -3%;
-  
-
-}
-.sliderag img {
-  
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-  transform: scale(1);
-  
-  
-
+.gallery:hover {
+  animation-play-state: paused;
 }
 
-.slider-navag {
-  display: flex;
-  column-gap: 1rem;
+span, .actu, .agenda {
   position: absolute;
-  left: 65%;
-  bottom: -67%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-.slider-navag a {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: grey;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-  
-  
-}
-.slider-navag a:hover {
-  opacity: 1;
-}
-.agenda {
-position: relative;
-border: #e2e2e0 1px solid;
-background-color: #e2e2e0;
-margin-left: 58%;
-padding: 0.6%;
-width: 10%;
-border-bottom-right-radius: 30px;
-border-top-right-radius: 30px;
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
-margin-top: -30%;
-width: 15%;
+  top: 0;
+  left: auto;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 80deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2666666667));
 }
 
-.vac1{
-  overflow: hidden;
+span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
 }
+
+.lienactu, .lienage {
+  text-decoration: none;
+  margin-left: 18.5%;
+  margin-top: -2%;
+  list-style-type: none;
+}
+
+.soon {
+  color: black;
+}
+
+.soon:hover {
+  color: yellow;
+}
+
+/*---------------footer------------------*/
 .fa-twitter {
   font-size: 30px;
   color: black;
-  margin-left: 43%;
+  margin-left: 40%;
 }
+
 .fa-facebook-f, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
   font-size: 30px;
   color: black;
   padding: 10px;
 }
-footer{
+
+footer {
   border: 1px grey solid;
   height: 50%;
-  margin-top: 30%;
+  margin-top: 50%;
   background-color: grey;
   overflow: hidden;
   color: white;
-  
 }
 
 .animalsfriends, .patrimoine {
   filter: brightness(0%);
-  width: 70px;  
-
+  width: 70px;
 }
 
- 
- 
 .animalsfriends {
   margin-left: 80%;
 }
+
 .citybxl {
   width: 150px;
   margin-left: 72.4%;
-  
-  
-
 }
-.unesco {
-width:110px;
 
-margin-left: 5%;
+.unesco {
+  width: 110px;
+  margin-left: 5%;
 }
 
 .patrimoine {
-  margin-left:6%;
-  margin-top:-5%;
+  margin-left: 6%;
+  margin-top: -5%;
   padding-top: 1%;
 }
+
 .brucity {
   text-align: center;
 }
 
-ul {
-  border:1px black solid;
-  box-shadow:-1px -1px 13px hsla(0, 0%, 9%, 0.25);
-  width:54%;
+.foo {
+  border: 1px black solid;
+  box-shadow: -1px -1px 13px hsla(0, 0%, 9%, 0.25);
+  width: 58%;
   height: 35px;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-top-left-radius: 30px;
-  text-decoration: none;
   text-transform: uppercase;
   list-style-type: none;
   color: black;
@@ -511,42 +478,22 @@ ul {
   margin-top: -7%;
   padding-top: 0.6%;
   overflow: hidden;
-  
- 
-  
 }
-li {
-display: inline;
-margin-right: 20px;
-color: black;
 
-
-  
-}
-a:link {
-  color:white;
-}
-a:visited {
-  color: white;
-}
-a:hover{
-  color: white;
-}
-a:active  {
+.cpumlca {
+  display: inline;
+  margin-right: 25px;
   color: black;
 }
-
 
 .fa-brands:hover {
   background-color: white;
   opacity: 0.2;
 }
+
 .obcn {
-  margin-left: 45%;
+  margin-left: 40%;
   margin-top: 5%;
-  
 }
-.strg {
-  text-decoration: underline;
-  font-weight: bold;
-}
+
+/*# sourceMappingURL=style.css.map */

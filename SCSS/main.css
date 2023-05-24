@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-/*-------------HEADER------------*/
 .bivnBruxelles {
   display: flex;
   justify-content: space-around;
@@ -15,12 +13,14 @@
   font-family: "Fira Sans", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
+
 .bivnBruxelles .logoBruxelles {
   width: 95px;
   height: 55px;
   margin-left: 35px;
   margin-right: 40px;
 }
+
 .bivnBruxelles .liste {
   padding-right: 3em;
   margin-right: 6%;
@@ -32,14 +32,11 @@ body {
   font-family: "Anuphan", sans-serif;
   font-family: "Fira Sans", sans-serif;
   font-family: "Montserrat", sans-serif;
-  
 }
 body a {
   text-decoration: none;
   color: white;
 }
-
-
 
 a:hover {
   color: yellow;
@@ -72,16 +69,7 @@ a:hover {
   width: 70%;
   text-shadow: -1px -1px 0 rgb(255, 255, 255);
 }
-button {
-  background-color: black;
-  color: white;
-  padding: 0 25px;
-  border-radius: 6px;
-  cursor: pointer;
-  text-transform: uppercase;
-  display: flex;
-}
-/* -------------------ACCEUIL PRESENTATION-------------------- */
+
 .decouvrezBruxelles {
   margin-left: 20em;
 }
@@ -122,7 +110,7 @@ button {
   margin-right: 20px;
 }
 
-/* PAGE EVENEMENTS */
+/* page événements */
 .eventBx {
   margin-left: 20%;
   margin-right: 20%;
@@ -265,6 +253,7 @@ button {
 #myBtn:hover {
   background-color: #777;
 }
+
 .formNous {
   margin-left: 30%;
   font-size: 20px;
@@ -326,80 +315,70 @@ button {
   width: 84.5%;
 }
 
-/*---------------SLIDER ACTU ET AGENDA------------------*/
-.titleactu {
-  margin-left: 21.1%;
-}
-.gallery{
-  position: relative;
-  width: 500px;
-  height: 400px;
-  transform-style: preserve-3d;
-  animation: animate 50s linear infinite ;
-  animation-play-state: running;
-  
+.formNous {
+  margin-left: 30%;
+  font-size: 20px;
+  line-height: 25px;
+  width: 900px;
+  text-align: justify;
 }
 
-
-@keyframes animate {
-  0%{
-      transform:  rotateY(0deg);
-  }
-  100%{
-      transform:  rotateY(360deg);
-  }
+.formulaire {
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: solid black 2px;
+  padding: 50px;
+  background-color: rgba(234, 234, 234, 0.887);
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    min-height: 60vh;
-    margin-left: 13em; 
-}
-.gallery:hover{
-  animation-play-state:paused;
-  
+.formulaire .logoBruxelles {
+  width: 150px;
+  height: 75px;
 }
 
-span, .actu, .agenda{
-  position: absolute;
-  top: 0;
-  left: auto;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 80deg)) translateZ(400px);
-  -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
- 
+.envoyer {
+  width: 10em;
+  background-color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 40%;
 }
 
-span img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  object-fit: cover;
-  cursor: pointer;
-
+.ameliorations {
+  width: 84.5%;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 25px;
 }
-.lienactu, .lienage {
+
+.contactDirect {
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+  padding: 2em;
+  width: 75%;
+  border: solid black 2px;
+  border-radius: 5%;
+  background-color: rgba(234, 234, 234, 0.887);
+}
+
+.contactDirect a {
   text-decoration: none;
-  margin-left: 18.5%;
-  margin-top: -2%;
-  list-style-type: none;
-}
-
-.soon {
   color: black;
-  
-}
-.soon:hover {
-  color:yellow;
 }
 
-/*---------------footer------------------*/
+.contactDirect a:hover {
+  color: rgba(255, 0, 0, 0.467);
+}
+
+.contactTel {
+  width: 84.5%;
+}
+
 .fa-twitter {
   font-size: 30px;
   color: black;
@@ -484,4 +463,72 @@ footer {
   margin-top: 5%;
 }
 
-/*# sourceMappingURL=style.css.map */
+.titleactu {
+  margin-left: 21.1%;
+}
+
+.gallery {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  transform-style: preserve-3d;
+  animation: animate 50s linear;
+  animation-play-state: running;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 60vh;
+  margin-left: 1em;
+}
+
+.gallery:hover {
+  animation-play-state: paused;
+}
+
+span, .actu, .agenda {
+  position: absolute;
+  top: 0;
+  left: auto;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 80deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2666666667));
+}
+
+span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.lienactu, .lienage {
+  text-decoration: none;
+  margin-left: 18.5%;
+  margin-top: -2%;
+  list-style-type: none;
+}
+
+.soon {
+  color: black;
+}
+
+.soon:hover {
+  color: yellow;
+}/*# sourceMappingURL=main.css.map */
