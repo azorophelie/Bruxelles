@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .fa-twitter {
     font-size: 30px;
     color: black;
@@ -11,12 +12,29 @@
   }
   
   footer {
+=======
+.vac1{
+    overflow: hidden;
+}
+.fa-twitter {
+    font-size: 30px;
+    color: black;
+    margin-left: 43%;
+}
+.fa-facebook-f, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+}
+footer{
+>>>>>>> 7fae5d283d1a60ecee540e82fd434b4f5bcb857f
     border: 1px grey solid;
     height: 50%;
     margin-top: 50%;
     background-color: grey;
     overflow: hidden;
     color: white;
+<<<<<<< HEAD
   }
   
   .animalsfriends, .patrimoine {
@@ -52,6 +70,47 @@
     border: 1px black solid;
     box-shadow: -1px -1px 13px hsla(0, 0%, 9%, 0.25);
     width: 58%;
+=======
+}
+
+.animalsfriends, .patrimoine {
+    filter: brightness(0%);
+    width: 70px;  
+  
+}
+
+   
+   
+.animalsfriends {
+    margin-left: 80%;
+}
+.citybxl {
+    width: 150px;
+    margin-left: 72.4%;
+    
+    
+  
+}
+.unesco {
+  width:110px;
+ 
+ margin-left: 5%;
+  }
+  
+.patrimoine {
+    margin-left:6%;
+    margin-top:-5%;
+    padding-top: 1%;
+}
+.brucity {
+    text-align: center;
+}
+
+ul {
+    border:1px black solid;
+    box-shadow:-1px -1px 13px hsla(0, 0%, 9%, 0.25);
+    width:54%;
+>>>>>>> 7fae5d283d1a60ecee540e82fd434b4f5bcb857f
     height: 35px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
@@ -64,6 +123,7 @@
     margin-top: -7%;
     padding-top: 0.6%;
     overflow: hidden;
+<<<<<<< HEAD
   }
   
   .cpumlca {
@@ -81,3 +141,32 @@
     margin-left: 40%;
     margin-top: 5%;
   }
+=======
+    
+   
+    
+}
+li {
+  display: inline;
+  margin-right: 25px;
+  color: black;
+  
+
+    
+}
+
+
+.fa-brands:hover {
+    background-color: white;
+    opacity: 0.2;
+}
+.obcn {
+    margin-left: 45%;
+    margin-top: 5%;
+    
+}
+.strg {
+    text-decoration: underline;
+    font-weight: bold;
+}
+>>>>>>> 7fae5d283d1a60ecee540e82fd434b4f5bcb857f
