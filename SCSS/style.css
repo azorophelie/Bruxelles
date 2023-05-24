@@ -32,6 +32,7 @@ body {
   font-family: "Anuphan", sans-serif;
   font-family: "Fira Sans", sans-serif;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 body a {
