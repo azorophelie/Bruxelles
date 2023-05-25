@@ -9,7 +9,7 @@
   justify-content: space-around;
   align-items: center;
   color: aqua;
-  width: 95.45em;
+  width: 100%;
   padding: 0.5em;
   background-color: rgb(0, 0, 0);
   font-size: 1.2em;
@@ -25,8 +25,7 @@
   margin-right: 40px;
 }
 .bivnBruxelles .liste {
-  padding-right: 3em;
-  margin-right: 6%;
+  margin-right: -8%;
 }
 
 body {
@@ -37,8 +36,40 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   
+  
 }
-
+#dark {
+  height :35px;
+  margin-top: -0.5%;
+  padding-top: 0.5%;
+  font-size: 0.9em;
+}
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff; 
+  
+  
+  a {
+    color: white;
+  }
+  .accueilPresentation {
+    color: black;
+  
+  }
+#myBtn {
+  background-color: white;
+  color: black;
+ }
+ #dark {
+  
+  background-color: white;
+  color: black
+  
+ }
+ span img {
+  border: 7px  solid white;
+ }
+}
 body a {
   text-decoration: none;
   color: white;
@@ -54,10 +85,11 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  
 }
 
 .panorama .grandeRoue {
-  width: 115.75em;
+  width: 100%;
   height: 30em;
   position: relative;
   transition: filter 0.3s ease-in-out;
@@ -341,8 +373,10 @@ button {
   width: 500px;
   height: 400px;
   transform-style: preserve-3d;
-  animation: animate 10s linear infinite ;
+  animation: animate 30s linear infinite ;
   animation-play-state: running;
+  
+ 
   
   
 }
@@ -362,8 +396,13 @@ button {
     justify-content: center;
     align-items: center;
     min-height: 60vh;
-    margin-left: 45%; 
+    margin-left: 45%;
     margin-right: 50%;
+    
+   
+    
+    
+    
 }
 .gallery:hover{
   animation-play-state:paused;
@@ -377,8 +416,9 @@ span, .actu, .agenda{
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 80deg)) translateZ(400px);
-  -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+  transform: rotateY(calc(var(--i) * 80deg)) translateZ(500px);
+ 
+  
  
 }
 
@@ -386,11 +426,13 @@ span img{
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
+  width: 400px;
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
   cursor: pointer;
+  border: 7px  solid black;
+  
 
 }
 .lienactu, .lienage {
@@ -398,6 +440,7 @@ span img{
   margin-left: 18.5%;
   margin-top: -2%;
   list-style-type: none;
+  
 }
 
 .soon {
@@ -424,7 +467,7 @@ span img{
 footer {
   border: 1px grey solid;
   height: 50%;
-  margin-top: 50%;
+  margin-top: 15%;
   background-color: grey;
   overflow: hidden;
   color: white;
