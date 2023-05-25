@@ -351,7 +351,7 @@ button {
   width: 500px;
   height: 400px;
   transform-style: preserve-3d;
-  animation: animate 50s linear infinite;
+  animation: animate 10s linear infinite;
   animation-play-state: running;
 }
 
@@ -366,8 +366,10 @@ button {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 60vh;
-  margin-left: 13em;
+  margin-left: 45%;
+  margin-right: 50%;
 }
 
 .gallery:hover {
@@ -497,4 +499,19 @@ footer {
   margin-top: 5%;
 }
 
-/*# sourceMappingURL=style.css.map */
+
+/*@media screen and (max-width:900px) {
+  .bivnBruxelles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: aqua;
+  width: 70em;
+  padding: 0.5em;
+  background-color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif; }
+}*//*# sourceMappingURL=style.css.map */
