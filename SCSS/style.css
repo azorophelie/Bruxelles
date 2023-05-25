@@ -22,7 +22,7 @@
 }
 
 .bivnBruxelles .liste {
-  margin-right: -8%;
+  margin-right: -15%;
 }
 
 body {
@@ -48,7 +48,13 @@ body.dark-mode {
 body.dark-mode a {
   color: white;
 }
+body.dark-mode a:hover {
+  color: yellow;
+}
 body.dark-mode .accueilPresentation {
+  color: black;
+}
+body.dark-mode .contactDirect a {
   color: black;
 }
 body.dark-mode #myBtn {
@@ -371,7 +377,7 @@ button {
 
 /*---------------SLIDER ACTU ET AGENDA------------------*/
 .titleactu {
-  margin-left: 21.1%;
+  margin-left: 16.8%;
 }
 
 .gallery {
@@ -429,24 +435,32 @@ span img {
 
 .lienactu, .lienage {
   text-decoration: none;
-  margin-left: 18.5%;
-  margin-top: -2%;
+  margin-left: 14.8%;
+  margin-top: -5%;
   list-style-type: none;
 }
 
-.soon {
+.lienage1, .lienactu1 {
+  margin-top: -4%;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 68%;
+}
+
+.lienactu a, .lienactu1 a, .lienage1 a, .lienage a {
   color: black;
 }
 
-.soon:hover {
+.agen1:hover, .agen2:hover, .actu1:hover, .actu2:hover {
   color: yellow;
 }
 
 /*---------------footer------------------*/
 .fa-twitter {
+  padding: 10px;
   font-size: 30px;
   color: black;
-  margin-left: 40%;
+  margin-left: 42.5%;
 }
 
 .fa-facebook-f, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
@@ -458,10 +472,12 @@ span img {
 footer {
   border: 1px grey solid;
   height: 50%;
+  width: 100%;
   margin-top: 15%;
   background-color: grey;
   overflow: hidden;
   color: white;
+  padding-top: 1%;
 }
 
 .animalsfriends, .patrimoine {
@@ -470,7 +486,7 @@ footer {
 }
 
 .animalsfriends {
-  margin-left: 80%;
+  margin-left: 77.6%;
 }
 
 .citybxl {
@@ -496,7 +512,7 @@ footer {
 .foo {
   border: 1px black solid;
   box-shadow: -1px -1px 13px hsla(0, 0%, 9%, 0.25);
-  width: 58%;
+  width: 44.8%;
   height: 35px;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
@@ -505,7 +521,7 @@ footer {
   text-transform: uppercase;
   list-style-type: none;
   color: black;
-  margin-left: 22%;
+  margin-left: 26%;
   margin-top: -7%;
   padding-top: 0.6%;
   overflow: hidden;
@@ -518,28 +534,18 @@ footer {
 }
 
 .fa-brands:hover {
-  background-color: white;
+  background-color: yellow;
   opacity: 0.2;
 }
 
 .obcn {
-  margin-left: 40%;
-  margin-top: 5%;
+  margin-left: 44%;
+  margin-top: 3%;
 }
 
+.stng {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-/*@media screen and (max-width:900px) {
-  .bivnBruxelles {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: aqua;
-  width: 70em;
-  padding: 0.5em;
-  background-color: rgb(0, 0, 0);
-  font-size: 1.2em;
-  font-family: "Abril Fatface", cursive;
-  font-family: "Anuphan", sans-serif;
-  font-family: "Fira Sans", sans-serif;
-  font-family: "Montserrat", sans-serif; }
-}*//*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
