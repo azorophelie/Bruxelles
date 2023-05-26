@@ -22,12 +22,14 @@
             <a href="accueil.html"><img src="images/Bruxelles-stad.png" class="logoBruxelles"></a>
 
             <nav class="liste">
-                <a href="https://www.calameo.com/read/0010576450c4dcd4269c4">NEWSPAPER</a>
-                <a href="evenement.html">ÉVÉNEMENTS</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="https://www.belgium.be/fr/services_en_ligne">PORTAIL</a>
+                <a href="https://www.calameo.com/read/0010576450c4dcd4269c4" class="NECP">NEWSPAPER</a>
+                <a href="evenement.html" class="NECP">ÉVÉNEMENTS</a>
+                <a href="contact.html" class="NECP">CONTACT</a>
+                <a href="https://www.belgium.be/fr/services_en_ligne" class="NECP">PORTAIL</a>
                 <button onclick="toggleDarkMode()" id="dark">Dark Mode</button>
-            </nav>
+            
+                    
+                        </nav>
 
         </header>
         
@@ -49,10 +51,10 @@
 <div class="container">
 <div class="gallery">
    
-    <span class="actu" style="--i: 1"><a href="https://www.bruxelles.be/bientot-les-vacances-pensez-vos-documents-de-voyage"><img src="images/4599a2ebf36d919455ca0595df886298-1678449193.jpg" alt="Image 2"></a></span>
-    <span class="actu" style="--i: 2"><a href="https://www.bruxelles.be/la-fete-des-marches-2023"><img src="images/fetedesmarches.png" alt=""></a></span>
-    <span class="actu" style="--i: 3"><a href="https://www.bruxelles.be/pride-archives"><img src="images/archivelgbt-og-fotor-bg-remover-20230523143655.png" alt=""></a></span>
-    <span class="actu" style="--i: 4"><a href="https://www.bruxelles.be/tax-on-web"><img src="images/DIV20_017_visu-FB_Tax_on_web_1actu.png" alt=""></a></span>
+    <span class="actu" style="--i: 1"><a href="https://www.bruxelles.be/bientot-les-vacances-pensez-vos-documents-de-voyage"><img id="slide-1" src="images/4599a2ebf36d919455ca0595df886298-1678449193.jpg" alt="Image 2"></a></span>
+    <span class="actu" style="--i: 2"><a href="https://www.bruxelles.be/la-fete-des-marches-2023"><img src="images/fetedesmarches.png" id="slide-2" alt=""></a></span>
+    <span class="actu" style="--i: 3"><a href="https://www.bruxelles.be/pride-archives"><img src="images/archivelgbt-og-fotor-bg-remover-20230523143655.png" id="slide-3" alt=""></a></span>
+    <span class="actu" style="--i: 4"><a href="https://www.bruxelles.be/tax-on-web"><img src="images/DIV20_017_visu-FB_Tax_on_web_1actu.png" id="slide-4" alt=""></a></span>
     
     
 </div><br>
@@ -67,11 +69,15 @@
     <li><a class="actu2" href="https://www.bruxelles.be/la-fete-des-marches-2023"><p>La Fête des Marchés 2023</p></a></li>
     <li><a class="actu2" href="https://www.bruxelles.be/pride-archives"><p>Collecte d'archives LGBTQIA+</p></a></li>
 </ul>
+
+ 
+ 
+
 <br><br>
 <h2 class="titleactu">AGENDA</h2><br><br>
 <div class="container">
 <div class="gallery">
-<span style="--i: 1"><a href="https://www.bruxelles.be/pride"><img src="images/Belgian-pride.jpg" alt=""></a></span>
+    <span class="agenda" style="--i: 1"><a href="https://www.bruxelles.be/pride"><img src="images/Belgian-pride.jpg" alt=""></a></span>
     <span class="agenda" style="--i: 2"><a href="https://www.couleurcafe.be/fr/"><img src="images/couleur-cafe-2020-brussels-26-june-2020-image.jpeg" alt=""></a></span>
     <span class="agenda" style="--i: 3"><a href="https://www.ars-varia.be/"><img src="images/9c49465452f499c7ee955eab2edd3554e7ab312d.jpg" alt=""></a></span>
     <span class="agenda" style="--i: 4"><a href="https://kfda.be/en/home/"><img src="images/kfda-def.png" alt=""></a></span>
@@ -117,7 +123,7 @@
 
 
         <div class="mapBruxelles">
-            <h2>VISITEZ BRUXELLES DEPUIS CHEZ VOUS</h2><br>
+            <h2 class="bru">VISITEZ BRUXELLES DEPUIS CHEZ VOUS</h2><br>
             <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.46253119424!2d4.292845480625456!3d50.855203239831496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2sBruxelles%2C%20Belgique!5e0!3m2!1sfr!2sfr!4v1684832961505!5m2!1sfr!2sfr" width="600" height="450" style="border: solid black 1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <iframe class="maps" src="https://www.google.com/maps/embed?pb=!4v1684833053992!6m8!1m7!1sRHiyWcMRbkf-cMYGUrAKLg!2m2!1d50.85099579766063!2d4.370128306556808!3f189.34354855737965!4f0.16331576474200915!5f0.7820865974627469" width="600" height="450" style="border:solid black 1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -143,9 +149,10 @@
                 <li class="cpumlca"><a href="contact.html">CONTACT</a></li>
                 <li class="cpumlca"><a href="https://www.bruxelles.be/journaliste">PRESSE</a></li>
                 <li class="cpumlca"><a href="https://www.bruxelles.be/services-de-secours-et-durgence">URGENCES</a></li>
-                <li class="cpumlca"><a href="https://www.bruxelles.be/mentions-legales">MENTIONS LÉGALES</a></li>
                 <li class="cpumlca"><a href="https://www.bruxelles.be/mentions-legales">CONFIDENTIALITÉ</a></li>
-                <li class="cpumlca"><a href="https://www.bruxelles.be/declaration-daccessibilite">ACCESSIBILITÉ</a></li>
+                <li class="cpumlca"><a  href="https://www.bruxelles.be/mentions-legales">MENTIONS LÉGALES</a></li>
+                 <li class="cpumlca"><a  href="https://www.bruxelles.be/declaration-daccessibilite">ACCESSIBILITÉ</a></li>
+                
             </ul>
         <p class="obcn">Site créé et hébergé par <a class="stng" href="https://github.com/BenoitDeud/Bruxelles-je-t-aime">OBCN</a></p>
         

@@ -12,12 +12,14 @@
   font-family: "Anuphan", sans-serif;
   font-family: "Fira Sans", sans-serif;
   font-family: "Montserrat", sans-serif;
+  position: fixed;
+  z-index: 1;
 }
 
 .bivnBruxelles .logoBruxelles {
   width: 95px;
   height: 55px;
-  margin-left: 35px;
+  margin-left: 25px;
   margin-right: 40px;
 }
 
@@ -26,7 +28,7 @@
 }
 
 body {
-  margin: 0%;
+  margin: auto 0;
   font-family: "Abril Fatface", cursive;
   font-family: "Anuphan", sans-serif;
   font-family: "Fira Sans", sans-serif;
@@ -97,6 +99,7 @@ a:hover {
 
 .panorama .bvn {
   z-index: 1;
+  height: 65px;
   position: absolute;
   text-align: center;
   margin: 0 auto;
@@ -410,7 +413,7 @@ button {
   animation-play-state: paused;
 }
 
-span, .actu, .agenda {
+.actu, .agenda {
   position: absolute;
   top: 0;
   left: auto;
@@ -548,4 +551,258 @@ footer {
   text-decoration: underline;
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: none;
+}
+
+@media only screen and (max-width: 930px) {
+  /* Styles pour cette Media Queries */
+  .search-bar {
+    top: 35%;
+    width: 70%;
+  }
+  .bvn {
+    padding-top: -30%;
+    font-size: 22px;
+  }
+  .gallery {
+    width: 400px;
+    height: 300px;
+    margin-left: 14%;
+    margin-top: -5%;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    animation: animate 1s linear;
+  }
+  @keyframes animate {
+    0% {
+      transform: rotateX(0deg);
+    }
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+  .gallery:hover {
+    animation-play-state: paused;
+  }
+  .actu, .agenda {
+    transform: rotateX(calc(var(--i) * 80deg)) translateZ(180px);
+  }
+  .titleactu {
+    margin-left: 2%;
+  }
+  span img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    /* Autres styles */
+  }
+  .lienactu, .lienage, .lienage1, .lienactu1 {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: auto;
+    overflow: hidden;
+    line-height: 1;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .decouvrezBruxelles {
+    margin-left: 2%;
+  }
+  .accueilPresentation {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background-color: rgba(234, 234, 234, 0.887);
+    margin-left: auto;
+    width: 100%;
+  }
+  .accueilPresentation .accueilImages:hover {
+    filter: brightness(115%);
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+  .accueilPresentation .accueilImages {
+    width: 100%;
+    height: 20em;
+    transition: filter 0.3s ease-in-out;
+  }
+  .accueilPresentation .accueilTextes {
+    flex-flow: column wrap;
+  }
+  .accueilPresentation .alignementText {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 90%;
+  }
+  .bru {
+    margin-left: 2%;
+  }
+  .mapBruxelles {
+    margin-left: auto;
+    width: 100%;
+  }
+  .mapBruxelles .maps {
+    margin-right: 20px;
+  }
+  /* PAGE EVENEMENT */
+  .come {
+    margin-left: -15%;
+  }
+  .eventBx {
+    width: 80%;
+  }
+  .eventMarcheBx {
+    display: flex;
+    flex-direction: column;
+    margin-left: -15%;
+  }
+  .eventMarcheBx .marcheBx, .marchesBrx {
+    width: 90%;
+    transition: transform 0.3s;
+  }
+  .eventMarcheBx .marchesBrx {
+    width: 90%;
+    height: 100%;
+  }
+  .descriptionEvent {
+    width: 100%;
+    margin-left: -15%;
+  }
+  .eventVoisinsBx {
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .afficheVoisins {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+  }
+  .fetevois {
+    text-align: left;
+    margin-left: 5%;
+    justify-content: left;
+    margin-right: 5%;
+  }
+  .youtubeVoisin {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* PAGE CONTACT */
+  .formNous {
+    line-height: 25px;
+    width: 100%;
+    margin-left: 2%;
+  }
+  .formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    border: solid black 2px;
+    margin-left: 0;
+    background-color: rgba(234, 234, 234, 0.887);
+  }
+  .formulaire .logoBruxelles {
+    width: 150px;
+    height: 75px;
+  }
+  .envoyer {
+    width: 10em;
+    background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 27%;
+  }
+  .gen, .contactTel, .ameliorations {
+    width: 80%;
+    margin-left: 2%;
+    font-size: 15px;
+  }
+  .contactDirect {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    padding: 2em;
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 5%;
+    background-color: rgba(234, 234, 234, 0.887);
+    margin-left: -1.8%;
+    text-align: left;
+  }
+  /* FOOTER */
+  footer {
+    height: 25em;
+    width: 100%;
+    margin-top: 15%;
+    background-color: grey;
+    overflow: visible;
+    color: white;
+    padding-top: 1%;
+  }
+  .fa-twitter {
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+    margin-left: 20%;
+  }
+  .fa-facebook-f, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
+    font-size: 30px;
+    color: black;
+    padding: 5px;
+  }
+  .brucity {
+    text-align: center;
+    font-size: 13px;
+  }
+  .foo {
+    display: inline;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 10%;
+  }
+  .cpumlca {
+    margin: 3%;
+    font-size: 12.5px;
+    color: black;
+  }
+  .animalsfriends {
+    margin-bottom: -51%;
+    margin-left: 0%;
+  }
+  .citybxl {
+    margin-left: 31%;
+    margin-bottom: -45%;
+  }
+  .patrimoine {
+    margin-bottom: -51%;
+    margin-left: 23%;
+  }
+  .unesco {
+    margin-left: 0;
+    margin-bottom: -48%;
+  }
+  .obcn {
+    margin: 0;
+    margin-top: 3%;
+    text-align: center;
+    font-size: 11px;
+  }
+  .stng {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
 /*# sourceMappingURL=style.css.map */
