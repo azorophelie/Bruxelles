@@ -36,7 +36,7 @@ body {
   overflow-x: hidden;
 }
 
-#dark {
+#dark, #sombre {
   height: 35px;
   margin-top: -0.5%;
   padding-top: 0.5%;
@@ -63,7 +63,7 @@ body.dark-mode #myBtn {
   background-color: white;
   color: black;
 }
-body.dark-mode #dark {
+body.dark-mode #dark, body.dark-mode #sombre {
   background-color: white;
   color: black;
 }
@@ -551,12 +551,7 @@ footer {
   text-decoration: underline;
 }
 
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
+.mobile-menu {
   display: none;
 }
 
@@ -566,9 +561,53 @@ footer {
     top: 35%;
     width: 70%;
   }
+  .bivnBruxelles {
+    overflow: hidden;
+    margin: auto;
+  }
   .bvn {
     padding-top: -30%;
     font-size: 22px;
+  }
+  .NECP {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+  }
+  .dropbtn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: black;
+    min-width: 160px;
+    font-size: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 60%;
+    top: 7.5%;
+    text-align: center;
+  }
+  .dropdown-content a {
+    color: rgb(252, 252, 252);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
   .gallery {
     width: 400px;

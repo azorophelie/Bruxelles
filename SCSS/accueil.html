@@ -8,7 +8,7 @@
     <title>Bruxelles</title>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/bea07da996.js" crossorigin="anonymous"></script>
-    <head>
+    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Fira+Sans:wght@100;400&family=Montserrat&display=swap" rel="stylesheet">
@@ -19,18 +19,31 @@
         
         <header class="bivnBruxelles">
 
-            <a href="accueil.html"><img src="images/Bruxelles-stad.png" class="logoBruxelles"></a>
-
+            <a href="accueil.html"><img src="images/Bruxelles-stad.png" class="logoBruxelles" alt="logo de bruxelles"></a>
+            
             <nav class="liste">
                 <a href="https://www.calameo.com/read/0010576450c4dcd4269c4" class="NECP">NEWSPAPER</a>
                 <a href="evenement.html" class="NECP">ÉVÉNEMENTS</a>
                 <a href="contact.html" class="NECP">CONTACT</a>
                 <a href="https://www.belgium.be/fr/services_en_ligne" class="NECP">PORTAIL</a>
-                <button onclick="toggleDarkMode()" id="dark">Dark Mode</button>
+                <button onclick="toggleDarkMode()" id="dark">
+                    <span id="darkModeIcon">🌙</span></button>
             
-                    
+                   
                         </nav>
+                         <!-- navbar version mobile -->
 
+<nav class="mobile-menu">
+    <div class="dropdown">
+      <button class="fa fa-bars dropbtn"></button>
+      <div class="dropdown-content">
+        <a href="https://www.calameo.com/read/0010576450c4dcd4269c4">NEWSPAPER</a>
+        <a href="evenement.html">ÉVÉNEMENTS</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="https://www.belgium.be/fr/services_en_ligne">PORTAIL</a>
+      </div>
+    </div>
+  </nav>              
         </header>
         
         <div class="panorama">

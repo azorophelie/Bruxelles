@@ -15,19 +15,33 @@
 
 <body>
 
-    <header class="bivnBruxelles">   
+    <header class="bivnBruxelles">
 
-        <a href="accueil.html"><img src="images/Bruxelles-stad.png" class="logoBruxelles"></a>
-
+        <a href="accueil.html"><img src="images/Bruxelles-stad.png" class="logoBruxelles" alt="logo de bruxelles"></a>
+        
         <nav class="liste">
-            
-            <a href="https://www.calameo.com/read/0010576450c4dcd4269c4">NEWSPAPER</a>
-            <a href="evenement.html">ÉVÉNEMENTS</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="https://www.belgium.be/fr/services_en_ligne">PORTAIL</a>
-            <button onclick="toggleDarkMode()" id="dark">Dark Mode</button>
-        </nav>
+            <a href="https://www.calameo.com/read/0010576450c4dcd4269c4" class="NECP">NEWSPAPER</a>
+            <a href="evenement.html" class="NECP">ÉVÉNEMENTS</a>
+            <a href="contact.html" class="NECP">CONTACT</a>
+            <a href="https://www.belgium.be/fr/services_en_ligne" class="NECP">PORTAIL</a>
+            <button onclick="toggleDarkMode()" id="sombre">
+                <span id="darkModeIcon">🌙</span></button>
+        
+               
+                    </nav>
+                     <!-- navbar version mobile -->
 
+<nav class="mobile-menu">
+<div class="dropdown">
+  <button class="fa fa-bars dropbtn"></button>
+  <div class="dropdown-content">
+    <a href="https://www.calameo.com/read/0010576450c4dcd4269c4">NEWSPAPER</a>
+    <a href="evenement.html">ÉVÉNEMENTS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="https://www.belgium.be/fr/services_en_ligne">PORTAIL</a>
+  </div>
+</div>
+</nav>              
     </header>
 
     <div class="panorama">
@@ -82,21 +96,21 @@
     <button onclick="scrollToTop()" id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
     <footer>
         
-        <a href="https://twitter.com/VilleBruxelles"><i class="fa-brands fa-twitter"></a></i>
-        <a href="https://www.facebook.com/BXLvilledebruxelles/"><i class="fa-brands fa-facebook-f"></a></i>
-        <a href="https://www.instagram.com/bxl_online/"><i class="fa-brands fa-instagram"></a></i>
-        <a href="https://www.youtube.com/channel/UC7YWA0rVhvyms5YsvYZiSeA"><i class="fa-brands fa-youtube"></a></i>
-        <a href="https://www.tiktok.com/@bxl_online"><i class="fa-brands fa-tiktok"></a></i>
-        <a href="https://open.spotify.com/user/bxl_online?si=3e0a3215512b477d&nd=1"><i class="fa-brands fa-spotify"></a></i>
+        <a href="https://twitter.com/VilleBruxelles"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/BXLvilledebruxelles/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/bxl_online/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC7YWA0rVhvyms5YsvYZiSeA"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@bxl_online"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://open.spotify.com/user/bxl_online?si=3e0a3215512b477d&nd=1"><i class="fa-brands fa-spotify"></i></a>
         <p class="brucity">Centre Administratif Brucity - Rue des Halles 4 - 1000 Bruxelles</p>
         
         
-        <a href="https://www.bruxelles.be/patrimoine-mondial-de-lunesco"><img class="patrimoine" src="images/patrimoin.png"></a>
-        <a href="https://www.bruxelles.be/commune-amie-des-animaux"><img class="animalsfriends" src="images/amieanimaux-removebg-preview.png"></a> <br>
-        <a href="https://www.bruxelles.be/patrimoine-mondial-de-lunesco"><img class="unesco" src="images/unesco.png"></a>
+        <a href="https://www.bruxelles.be/patrimoine-mondial-de-lunesco"><img class="patrimoine" src="images/patrimoin.png" alt="patrimoine"></a>
+        <a href="https://www.bruxelles.be/commune-amie-des-animaux"><img class="animalsfriends" src="images/amieanimaux-removebg-preview.png" alt="amie des animaux"></a> <br>
+        <a href="https://www.bruxelles.be/patrimoine-mondial-de-lunesco"><img class="unesco" src="images/unesco.png" alt="unesco"></a>
         
             
-            <img class="citybxl" src="images/ville-bxl.png">
+            <img class="citybxl" src="images/ville-bxl.png" alt="ville de bruxelles">
             <ul class="foo">
                 <li class="cpumlca"><a href="contact.html">CONTACT</a></li>
                 <li class="cpumlca"><a href="https://www.bruxelles.be/journaliste">PRESSE</a></li>
