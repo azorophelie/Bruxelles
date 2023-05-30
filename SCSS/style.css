@@ -147,6 +147,10 @@ button {
   transition: transform 0.3s;
 }
 
+.titletext {
+  margin-left: 3%;
+}
+
 .accueilPresentation .accueilTextes {
   padding-left: 1em;
 }
@@ -562,8 +566,14 @@ footer {
     width: 70%;
   }
   .bivnBruxelles {
-    overflow: hidden;
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  #dark {
+    margin-left: -120%;
+  }
+  html {
+    overflow-x: hidden;
   }
   .bvn {
     padding-top: -30%;
@@ -578,7 +588,6 @@ footer {
   .dropdown {
     position: relative;
     display: inline-block;
-    text-align: left;
   }
   .dropbtn {
     background-color: rgb(0, 0, 0);
@@ -587,6 +596,7 @@ footer {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin-left: -10%;
   }
   .dropdown-content {
     display: none;
@@ -596,8 +606,8 @@ footer {
     font-size: 12px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    left: 60%;
-    top: 7.5%;
+    left: 65%;
+    top: 8.5%;
     text-align: center;
   }
   .dropdown-content a {
@@ -687,9 +697,10 @@ footer {
   .mapBruxelles {
     margin-left: auto;
     width: 100%;
+    margin-left: 0;
   }
   .mapBruxelles .maps {
-    margin-right: 20px;
+    width: 100%;
   }
   /* PAGE EVENEMENT */
   .come {
