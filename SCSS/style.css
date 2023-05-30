@@ -559,10 +559,10 @@ footer {
   display: none;
 }
 
-@media only screen and (max-width: 930px) {
+@media screen and (max-width: 930px) {
   /* Styles pour cette Media Queries */
   .search-bar {
-    top: 35%;
+    top: 34%;
     width: 70%;
   }
   .bivnBruxelles {
@@ -576,7 +576,7 @@ footer {
     overflow-x: hidden;
   }
   .bvn {
-    padding-top: -30%;
+    padding-top: 1%;
     font-size: 22px;
   }
   .NECP {
@@ -593,7 +593,7 @@ footer {
     background-color: rgb(0, 0, 0);
     color: white;
     padding: 12px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     margin-left: -10%;
@@ -618,6 +618,9 @@ footer {
   }
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  a:hover {
+    color: yellow;
   }
   .gallery {
     width: 400px;
@@ -661,6 +664,7 @@ footer {
     line-height: 1;
     padding-left: 2%;
     padding-right: 2%;
+    margin-top: 5%;
   }
   .decouvrezBruxelles {
     margin-left: 2%;
@@ -701,6 +705,9 @@ footer {
   }
   .mapBruxelles .maps {
     width: 100%;
+  }
+  .maps {
+    margin-top: 5%;
   }
   /* PAGE EVENEMENT */
   .come {
@@ -796,7 +803,7 @@ footer {
     width: 100%;
     margin-top: 15%;
     background-color: grey;
-    overflow: visible;
+    overflow: hidden;
     color: white;
     padding-top: 1%;
   }
@@ -855,4 +862,80 @@ footer {
     text-decoration: underline;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+/*
+@media screen and (max-width: 930px x 430px) {
+  .search-bar {
+    top: 65%;
+  }
+  .bvn {
+    padding-top: 10%;
+  }
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: black;
+    min-width: 160px;
+    font-size: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 83%;
+    top :18.5%;
+    text-align: center;
+  }  
+  .lienactu, .lienactu {
+    margin-top: 15%;
+  }
+
+  .gallery {
+     margin-top: 3%;
+  }
+  .fa-twitter {
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+    margin-left: 35%;
+  }
+
+  .fa-facebook-f, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
+    font-size: 30px;
+    color: black;
+    padding: 5px;
+  }
+  .foo {
+    display: inline;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-left: -88%;
+
+
+  }
+
+
+  .cpumlca {
+
+    margin: 3%;
+    font-size: 12.5px;
+    color: black;
+  }
+  .animalsfriends {
+    margin-bottom: -18%;
+    margin-left: 10%;
+
+  }
+  .citybxl{
+    margin-left: 47%;
+    margin-bottom: -15.5%;
+  }
+  .patrimoine {
+    margin-bottom: -18%;
+    margin-left: 33%;
+
+  }
+  .unesco {
+    margin-left: 10%;
+    margin-bottom: -16.5%;
+  }
+}*//*# sourceMappingURL=style.css.map */
