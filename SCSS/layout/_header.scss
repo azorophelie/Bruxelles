@@ -1,24 +1,44 @@
+/*-------------HEADER------------*/
 .bivnBruxelles {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: aqua;
-  width: 95.45em;
-  padding: 0.5em;
-  background-color: rgb(0, 0, 0);
-  font-size: 1.2em;
-  font-family: "Abril Fatface", cursive;
-  font-family: "Anuphan", sans-serif;
-  font-family: "Fira Sans", sans-serif;
-  font-family: "Montserrat", sans-serif;
-}
-.bivnBruxelles .logoBruxelles {
-  width: 95px;
-  height: 55px;
-  margin-left: 35px;
-  margin-right: 40px;
-}
-.bivnBruxelles .liste {
-  padding-right: 3em;
-  margin-right: 6%;
-}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aqua;
+    width: 100%;
+    padding: 0.5em;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-family: "Abril Fatface", cursive;
+    font-family: "Anuphan", sans-serif;
+    font-family: "Fira Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    position: fixed;
+    z-index: 1;
+   
+    
+  }
+  
+  .bivnBruxelles .logoBruxelles {
+    width: 95px;
+    height: 55px;
+    margin-left: 25px;
+    margin-right: 40px;
+  }
+  .bivnBruxelles .liste {
+    margin-right: -15%;
+    
+  }
+  .liste {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    
+  }
+
+  a:hover {
+    color: yellow;
+  }
+
+  .mobile-menu {
+    display: none;
+  }

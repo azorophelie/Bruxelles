@@ -1,5 +1,5 @@
 .titleactu {
-  margin-left: 21.1%;
+  margin-left: 16.8%;
 }
 
 .gallery {
@@ -7,7 +7,7 @@
   width: 500px;
   height: 400px;
   transform-style: preserve-3d;
-  animation: animate 50s linear;
+  animation: animate 30s linear infinite;
   animation-play-state: running;
 }
 
@@ -22,48 +22,57 @@
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 60vh;
-  margin-left: 1em;
+  margin-left: 45%;
+  margin-right: 50%;
 }
 
 .gallery:hover {
   animation-play-state: paused;
 }
 
-span, .actu, .agenda {
+.actu, .agenda {
   position: absolute;
   top: 0;
   left: auto;
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 80deg)) translateZ(400px);
-  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2666666667));
+  transform: rotateY(calc(var(--i) * 80deg)) translateZ(500px);
 }
 
 span img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
+  width: 400px;
   height: 300px;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+  border: 7px solid black;
 }
 
 .lienactu, .lienage {
   text-decoration: none;
-  margin-left: 18.5%;
-  margin-top: -2%;
+  margin-left: 14.8%;
+  margin-top: -5%;
   list-style-type: none;
 }
 
-.soon {
+.lienage1, .lienactu1 {
+  margin-top: -4%;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 68%;
+}
+
+.lienactu a, .lienactu1 a, .lienage1 a, .lienage a {
   color: black;
 }
 
-.soon:hover {
+.agen1:hover, .agen2:hover, .actu1:hover, .actu2:hover {
   color: yellow;
 }/*# sourceMappingURL=carrousel.css.map */

@@ -1,169 +1,11 @@
-@charset "UTF-8";
-.bivnBruxelles {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: aqua;
-  width: 95.45em;
-  padding: 0.5em;
-  background-color: rgb(0, 0, 0);
-  font-size: 1.2em;
-  font-family: "Abril Fatface", cursive;
-  font-family: "Anuphan", sans-serif;
-  font-family: "Fira Sans", sans-serif;
-  font-family: "Montserrat", sans-serif;
-}
-
-.bivnBruxelles .logoBruxelles {
-  width: 95px;
-  height: 55px;
-  margin-left: 35px;
-  margin-right: 40px;
-}
-
-.bivnBruxelles .liste {
-  padding-right: 3em;
-  margin-right: 6%;
-}
-
-body {
-  margin: 0%;
-  font-family: "Abril Fatface", cursive;
-  font-family: "Anuphan", sans-serif;
-  font-family: "Fira Sans", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  background-color: white;
-  color: black;
-}
-body a {
-  text-decoration: none;
+button {
+  background-color: black;
   color: white;
-}
-
-a:hover {
-  color: yellow;
-}
-
-.liste {
+  padding: 0 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
   display: flex;
-  flex-direction: row;
-  gap: 1em;
-}
-
-.panorama .grandeRoue {
-  width: 115.75em;
-  height: 30em;
-  position: relative;
-  transition: filter 0.3s ease-in-out;
-}
-.panorama .grandeRoue:hover {
-  filter: brightness(115%);
-}
-.panorama .bvn {
-  z-index: 1;
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  left: 8px;
-  right: 0;
-  top: 26%;
-  color: rgb(0, 0, 0);
-  width: 70%;
-  text-shadow: -1px -1px 0 rgb(255, 255, 255);
-}
-
-.decouvrezBruxelles {
-  margin-left: 20em;
-}
-
-.accueilPresentation {
-  display: flex;
-  flex-direction: row;
-  text-align: justify;
-  background-color: rgba(234, 234, 234, 0.887);
-  margin-left: 20em;
-  margin-right: 20em;
-}
-.accueilPresentation .accueilImages {
-  width: 38em;
-  height: 20em;
-  transition: filter 0.3s ease-in-out;
-}
-.accueilPresentation .accueilImages:hover {
-  filter: brightness(115%);
-  transform: scale(1.2);
-  transition: transform 0.3s;
-}
-.accueilPresentation .accueilTextes {
-  padding-left: 1em;
-}
-.accueilPresentation .alignementText {
-  display: flex;
-  flex-direction: column;
-  margin-left: 2em;
-  margin-right: 2em;
-  width: 36em;
-}
-
-.mapBruxelles {
-  margin-left: 20em;
-}
-.mapBruxelles .maps {
-  margin-right: 20px;
-}
-
-/* page événements */
-.eventBx {
-  margin-left: 20%;
-  margin-right: 20%;
-  width: 67.1%;
-  text-align: justify;
-  justify-content: center;
-}
-
-.eventMarcheBx {
-  display: flex;
-  flex-direction: row;
-  gap: 2%;
-}
-.eventMarcheBx .marcheBx {
-  width: 38%;
-  transition: transform 0.3s;
-}
-.eventMarcheBx .marcheBx:hover {
-  transform: scale(2);
-}
-.eventMarcheBx .marchesBrx {
-  width: 48%;
-  height: 55%;
-}
-
-.descriptionEvent {
-  width: 90%;
-  line-height: 25px;
-}
-
-.eventVoisinsBx {
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: justify;
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  gap: 1em;
-  line-height: 25px;
-}
-
-.afficheVoisins {
-  transition: transform 0.3s;
-}
-
-.afficheVoisins:hover {
-  transform: scale(1.4);
-}
-
-.youtubeVoisin {
-  margin-left: 20%;
 }
 
 .search-bar {
@@ -221,170 +63,90 @@ a:hover {
   background-color: #777;
 }
 
-.search-button {
-  display: block;
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.titleactu {
+  margin-left: 16.8%;
+}
+
+.gallery {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  transform-style: preserve-3d;
+  animation: animate 30s linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  margin-left: 45%;
+  margin-right: 50%;
+}
+
+.gallery:hover {
+  animation-play-state: paused;
+}
+
+.actu, .agenda {
+  position: absolute;
+  top: 0;
+  left: auto;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 80deg)) translateZ(500px);
+}
+
+span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
-  font-family: "Abril Fatface", cursive;
-  font-family: "Anuphan", sans-serif;
-  font-family: "Fira Sans", sans-serif;
-  font-family: "Montserrat", sans-serif;
+  border: 7px solid black;
 }
 
-#myBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 15px;
-  z-index: 100;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  background-color: #000000;
-  color: white;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #777;
-}
-
-.formNous {
-  margin-left: 30%;
-  font-size: 20px;
-  line-height: 25px;
-  width: 900px;
-  text-align: justify;
-}
-
-.formulaire {
-  margin: 0%;
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  margin-left: 30%;
-  margin-right: 30%;
-  border: solid black 2px;
-  padding: 50px;
-  background-color: rgba(234, 234, 234, 0.887);
-}
-.formulaire .logoBruxelles {
-  width: 150px;
-  height: 75px;
-}
-
-.envoyer {
-  width: 10em;
-  background-color: white;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-left: 40%;
-}
-
-.ameliorations {
-  width: 84.5%;
-  text-align: justify;
-  font-size: 20px;
-  line-height: 25px;
-}
-
-.contactDirect {
-  display: flex;
-  flex-direction: column;
-  line-height: 50px;
-  padding: 2em;
-  width: 75%;
-  border: solid black 2px;
-  border-radius: 5%;
-  background-color: rgba(234, 234, 234, 0.887);
-}
-.contactDirect a {
+.lienactu, .lienage {
   text-decoration: none;
-  color: black;
-}
-.contactDirect a:hover {
-  color: rgba(255, 0, 0, 0.467);
-}
-
-.contactTel {
-  width: 84.5%;
+  margin-left: 14.8%;
+  margin-top: -5%;
+  list-style-type: none;
 }
 
-.formNous {
-  margin-left: 30%;
-  font-size: 20px;
-  line-height: 25px;
-  width: 900px;
-  text-align: justify;
-}
-
-.formulaire {
-  margin: 0%;
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  margin-left: 30%;
-  margin-right: 30%;
-  border: solid black 2px;
-  padding: 50px;
-  background-color: rgba(234, 234, 234, 0.887);
-}
-
-.formulaire .logoBruxelles {
-  width: 150px;
-  height: 75px;
-}
-
-.envoyer {
-  width: 10em;
-  background-color: white;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-left: 40%;
-}
-
-.ameliorations {
-  width: 84.5%;
-  text-align: justify;
-  font-size: 20px;
-  line-height: 25px;
-}
-
-.contactDirect {
-  display: flex;
-  flex-direction: column;
-  line-height: 50px;
-  padding: 2em;
-  width: 75%;
-  border: solid black 2px;
-  border-radius: 5%;
-  background-color: rgba(234, 234, 234, 0.887);
-}
-
-.contactDirect a {
+.lienage1, .lienactu1 {
+  margin-top: -4%;
+  list-style-type: none;
   text-decoration: none;
+  margin-left: 68%;
+}
+
+.lienactu a, .lienactu1 a, .lienage1 a, .lienage a {
   color: black;
 }
 
-.contactDirect a:hover {
-  color: rgba(255, 0, 0, 0.467);
-}
-
-.contactTel {
-  width: 84.5%;
+.agen1:hover, .agen2:hover, .actu1:hover, .actu2:hover {
+  color: yellow;
 }
 
 .fa-twitter {
+  padding: 10px;
   font-size: 30px;
   color: black;
-  margin-left: 40%;
+  margin-left: 42.5%;
 }
 
 .fa-facebook-f, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
@@ -396,10 +158,12 @@ a:hover {
 footer {
   border: 1px grey solid;
   height: 50%;
-  margin-top: 50%;
+  width: 100%;
+  margin-top: 15%;
   background-color: grey;
   overflow: hidden;
   color: white;
+  padding-top: 1%;
 }
 
 .animalsfriends, .patrimoine {
@@ -408,7 +172,7 @@ footer {
 }
 
 .animalsfriends {
-  margin-left: 80%;
+  margin-left: 77.6%;
 }
 
 .citybxl {
@@ -434,7 +198,7 @@ footer {
 .foo {
   border: 1px black solid;
   box-shadow: -1px -1px 13px hsla(0, 0%, 9%, 0.25);
-  width: 58%;
+  width: 44.8%;
   height: 35px;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
@@ -443,7 +207,7 @@ footer {
   text-transform: uppercase;
   list-style-type: none;
   color: black;
-  margin-left: 22%;
+  margin-left: 26%;
   margin-top: -7%;
   padding-top: 0.6%;
   overflow: hidden;
@@ -456,81 +220,607 @@ footer {
 }
 
 .fa-brands:hover {
-  background-color: white;
+  background-color: yellow;
   opacity: 0.2;
 }
 
 .obcn {
-  margin-left: 40%;
-  margin-top: 5%;
+  margin-left: 44%;
+  margin-top: 3%;
 }
 
-.titleactu {
-  margin-left: 21.1%;
+.stng {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-.gallery {
-  position: relative;
-  width: 500px;
-  height: 400px;
-  transform-style: preserve-3d;
-  animation: animate 50s linear;
-  animation-play-state: running;
-}
-
-@keyframes animate {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-.container {
+/*-------------HEADER------------*/
+.bivnBruxelles {
   display: flex;
-  justify-content: center;
-  min-height: 60vh;
-  margin-left: 1em;
+  justify-content: space-around;
+  align-items: center;
+  color: aqua;
+  width: 100%;
+  padding: 0.5em;
+  background-color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  z-index: 1;
 }
 
-.gallery:hover {
-  animation-play-state: paused;
+.bivnBruxelles .logoBruxelles {
+  width: 95px;
+  height: 55px;
+  margin-left: 25px;
+  margin-right: 40px;
 }
 
-span, .actu, .agenda {
-  position: absolute;
-  top: 0;
-  left: auto;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 80deg)) translateZ(400px);
-  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2666666667));
+.bivnBruxelles .liste {
+  margin-right: -15%;
 }
 
-span img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
+.liste {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
 }
 
-.lienactu, .lienage {
+a:hover {
+  color: yellow;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.formNous {
+  margin-left: 30%;
+  font-size: 20px;
+  line-height: 25px;
+  width: 900px;
+  text-align: justify;
+}
+
+.formulaire {
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: solid black 2px;
+  padding: 50px;
+  background-color: rgba(234, 234, 234, 0.887);
+}
+
+.formulaire .logoBruxelles {
+  width: 150px;
+  height: 75px;
+}
+
+.envoyer {
+  width: 10em;
+  background-color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 40%;
+}
+
+.ameliorations {
+  width: 84.5%;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.contactDirect {
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+  padding: 2em;
+  width: 75%;
+  border: solid black 2px;
+  border-radius: 5%;
+  background-color: rgba(234, 234, 234, 0.887);
+}
+
+.contactDirect a {
   text-decoration: none;
-  margin-left: 18.5%;
-  margin-top: -2%;
-  list-style-type: none;
-}
-
-.soon {
   color: black;
 }
 
-.soon:hover {
+.contactDirect a:hover {
+  color: rgba(255, 0, 0, 0.467);
+}
+
+.contactTel {
+  width: 84.5%;
+}
+
+.panorama .grandeRoue {
+  width: 100%;
+  height: 30em;
+  position: relative;
+  transition: filter 0.3s ease-in-out;
+}
+
+.panorama .grandeRoue:hover {
+  filter: brightness(115%);
+}
+
+.panorama .bvn {
+  z-index: 0;
+  height: 65px;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 8px;
+  right: 0;
+  top: 26%;
+  color: rgb(0, 0, 0);
+  width: 70%;
+  text-shadow: -1px -1px 0 rgb(255, 255, 255);
+}
+
+.decouvrezBruxelles {
+  margin-left: 20em;
+}
+
+.accueilPresentation {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  background-color: rgba(234, 234, 234, 0.887);
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+.accueilPresentation .accueilImages {
+  width: 38em;
+  height: 20em;
+  transition: filter 0.3s ease-in-out;
+}
+
+.accueilPresentation .accueilImages:hover {
+  filter: brightness(115%);
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.titletext {
+  margin-left: 3%;
+}
+
+.accueilPresentation .accueilTextes {
+  padding-left: 1em;
+}
+
+.accueilPresentation .alignementText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 36em;
+}
+
+.mapBruxelles {
+  margin-left: 20em;
+}
+
+.mapBruxelles .maps {
+  margin-right: 20px;
+}
+
+.eventBx {
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 67.1%;
+  text-align: justify;
+  justify-content: center;
+}
+
+.eventMarcheBx {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+.eventMarcheBx .marcheBx {
+  width: 38%;
+  transition: transform 0.3s;
+}
+
+.eventMarcheBx .marcheBx:hover {
+  transform: scale(2);
+}
+
+.eventMarcheBx .marchesBrx {
+  width: 48%;
+  height: 55%;
+}
+
+.descriptionEvent {
+  width: 90%;
+  line-height: 25px;
+}
+
+.eventVoisinsBx {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  gap: 1em;
+  line-height: 25px;
+}
+
+.afficheVoisins {
+  transition: transform 0.3s;
+}
+
+.afficheVoisins:hover {
+  transform: scale(1.4);
+}
+
+.youtubeVoisin {
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 930px) {
+  /*---------------HEADER MOBILE---------------*/
+  .search-bar {
+    top: 34%;
+    width: 70%;
+  }
+  .bivnBruxelles {
+    display: flex;
+    justify-content: space-between;
+  }
+  #dark {
+    margin-left: -120%;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  .bvn {
+    padding-top: 1%;
+    font-size: 22px;
+  }
+  .NECP {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: -10%;
+  }
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: black;
+    min-width: 160px;
+    font-size: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 65%;
+    top: 8.5%;
+    text-align: center;
+  }
+  .dropdown-content a {
+    color: rgb(252, 252, 252);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  a:hover {
+    color: yellow;
+  }
+  /*-------------------SLIDER ACTU ET AGENDA MOBILE-----------------------*/
+  .gallery {
+    width: 400px;
+    height: 300px;
+    margin-left: 14%;
+    margin-top: -5%;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    animation: animate 1s linear;
+  }
+  @keyframes animate {
+    0% {
+      transform: rotateX(0deg);
+    }
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+  .gallery:hover {
+    animation-play-state: paused;
+  }
+  .actu, .agenda {
+    transform: rotateX(calc(var(--i) * 80deg)) translateZ(180px);
+  }
+  .titleactu {
+    margin-left: 2%;
+  }
+  span img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .lienactu, .lienage, .lienage1, .lienactu1 {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: auto;
+    overflow: hidden;
+    line-height: 1;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 5%;
+  }
+  /*-----------------PRESENTATION PAGE ACCEUIL MOBILE------------------*/
+  .decouvrezBruxelles {
+    margin-left: 2%;
+  }
+  .accueilPresentation {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background-color: rgba(234, 234, 234, 0.887);
+    margin-left: auto;
+    width: 100%;
+  }
+  .accueilPresentation .accueilImages:hover {
+    filter: brightness(115%);
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+  .accueilPresentation .accueilImages {
+    width: 100%;
+    height: 20em;
+    transition: filter 0.3s ease-in-out;
+  }
+  .accueilPresentation .accueilTextes {
+    flex-flow: column wrap;
+  }
+  .accueilPresentation .alignementText {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 90%;
+  }
+  /*------------------CARTES BRUXELLES MOBILE-----------------------*/
+  .bru {
+    margin-left: 2%;
+  }
+  .mapBruxelles {
+    margin-left: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+  .mapBruxelles .maps {
+    width: 100%;
+  }
+  .maps {
+    margin-top: 5%;
+  }
+  /*----------------PAGE EVENEMENT MOBILE----------------*/
+  .come {
+    margin-left: -15%;
+  }
+  .eventBx {
+    width: 80%;
+  }
+  .eventMarcheBx {
+    display: flex;
+    flex-direction: column;
+    margin-left: -15%;
+  }
+  .eventMarcheBx .marcheBx, .marchesBrx {
+    width: 90%;
+    transition: transform 0.3s;
+  }
+  .eventMarcheBx .marchesBrx {
+    width: 90%;
+    height: 100%;
+  }
+  .descriptionEvent {
+    width: 100%;
+    margin-left: -15%;
+  }
+  .eventVoisinsBx {
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .afficheVoisins {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+  }
+  .fetevois {
+    text-align: left;
+    margin-left: 5%;
+    justify-content: left;
+    margin-right: 5%;
+  }
+  .youtubeVoisin {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /*----------------PAGE CONTACT MOBILE----------------*/
+  .formNous {
+    line-height: 25px;
+    width: 100%;
+    margin-left: 2%;
+  }
+  .formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    border: solid black 2px;
+    margin-left: 0;
+    background-color: rgba(234, 234, 234, 0.887);
+  }
+  .formulaire .logoBruxelles {
+    width: 150px;
+    height: 75px;
+  }
+  .envoyer {
+    width: 10em;
+    background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 27%;
+  }
+  .gen, .contactTel, .ameliorations {
+    width: 80%;
+    margin-left: 2%;
+    font-size: 15px;
+  }
+  .contactDirect {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    padding: 2em;
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 5%;
+    background-color: rgba(234, 234, 234, 0.887);
+    margin-left: -1.8%;
+    text-align: left;
+  }
+  /*----------------FOOTER MOBILE---------------------*/
+  footer {
+    height: 25em;
+    width: 100%;
+    margin-top: 15%;
+    background-color: grey;
+    overflow: hidden;
+    color: white;
+    padding-top: 1%;
+  }
+  .fa-twitter {
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+    margin-left: 20%;
+  }
+  .fa-facebook-f, .fa-instagram, .fa-youtube, .fa-tiktok, .fa-spotify {
+    font-size: 30px;
+    color: black;
+    padding: 5px;
+  }
+  .brucity {
+    text-align: center;
+    font-size: 13px;
+  }
+  .foo {
+    display: inline;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 10%;
+  }
+  .cpumlca {
+    margin: 3%;
+    font-size: 12.5px;
+    color: black;
+  }
+  .animalsfriends {
+    margin-bottom: -51%;
+    margin-left: 0%;
+  }
+  .citybxl {
+    margin-left: 31%;
+    margin-bottom: -45%;
+  }
+  .patrimoine {
+    margin-bottom: -51%;
+    margin-left: 23%;
+  }
+  .unesco {
+    margin-left: 0;
+    margin-bottom: -48%;
+  }
+  .obcn {
+    margin: 0;
+    margin-top: 3%;
+    text-align: center;
+    font-size: 11px;
+  }
+  .stng {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+body {
+  margin: auto 0;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anuphan", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+#dark, #sombre {
+  height: 35px;
+  margin-top: -0.5%;
+  padding-top: 0.5%;
+  font-size: 0.9em;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+body.dark-mode a {
+  color: white;
+}
+body.dark-mode a:hover {
   color: yellow;
+}
+body.dark-mode .accueilPresentation {
+  color: black;
+}
+body.dark-mode .contactDirect a {
+  color: black;
+}
+body.dark-mode #myBtn {
+  background-color: white;
+  color: black;
+}
+body.dark-mode #dark, body.dark-mode #sombre {
+  background-color: white;
+  color: black;
+}
+body.dark-mode span img {
+  border: 7px solid white;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

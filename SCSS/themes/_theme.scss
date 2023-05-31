@@ -1,23 +1,53 @@
 body {
-    margin: 0%;
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Anuphan', sans-serif;
-    font-family: 'Fira Sans', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    margin: auto 0;
+    font-family: "Abril Fatface", cursive;
+    font-family: "Anuphan", sans-serif;
+    font-family: "Fira Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    
+    
+  }
+  #dark, #sombre  {
+    height :35px;
+    margin-top: -0.5%;
+    padding-top: 0.5%;
+    font-size: 0.9em;
+  }
+  body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff; 
+    
+    
+    a {
+      color: white;
+    }
+    a:hover {
+      color: yellow;
+    }
+    .accueilPresentation {
+      color: black;
+    
+    }
+    .contactDirect a {
+      color: black;
+    }
+  #myBtn {
     background-color: white;
     color: black;
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
-
-a:hover {
-    color: yellow;
-}
-
-.liste {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
+   }
+   #dark, #sombre {
+    
+    background-color: white;
+    color: black
+    
+   }
+   span img {
+    border: 7px  solid white;
+   }
+  }
+  body a {
+    text-decoration: none;
+    color: white;
+  }
+  
