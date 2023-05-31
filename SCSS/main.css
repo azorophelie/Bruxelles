@@ -471,7 +471,7 @@ a:hover {
   margin-left: 20%;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (min-width: 300px) and (max-width: 1000px) {
   /*---------------HEADER MOBILE---------------*/
   .search-bar {
     top: 34%;
@@ -750,24 +750,25 @@ a:hover {
     color: black;
   }
   .animalsfriends {
-    margin-bottom: -51%;
+    margin-bottom: -33%;
     margin-left: 0%;
+    position: relative;
   }
   .citybxl {
     margin-left: 31%;
-    margin-bottom: -45%;
+    margin-bottom: -28%;
   }
   .patrimoine {
-    margin-bottom: -51%;
+    margin-bottom: -33%;
     margin-left: 23%;
   }
   .unesco {
     margin-left: 0;
-    margin-bottom: -48%;
+    margin-bottom: -30%;
   }
   .obcn {
     margin: 0;
-    margin-top: 3%;
+    margin-top: 25%;
     text-align: center;
     font-size: 11px;
   }
