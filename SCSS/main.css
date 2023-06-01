@@ -234,6 +234,25 @@ footer {
   text-decoration: underline;
 }
 
+/*-------NETHERLANDS----------*/
+.foonl {
+  border: 1px black solid;
+  box-shadow: -1px -1px 13px hsla(0, 0%, 9%, 0.25);
+  width: 50%;
+  height: 35px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  text-transform: uppercase;
+  list-style-type: none;
+  color: black;
+  margin-left: 26%;
+  margin-top: -7%;
+  padding-top: 0.6%;
+  overflow: hidden;
+}
+
 /*-------------HEADER------------*/
 .bivnBruxelles {
   display: flex;
@@ -469,6 +488,19 @@ a:hover {
 
 .youtubeVoisin {
   margin-left: 20%;
+}
+
+.langdropdown {
+  margin-left: 3%;
+}
+
+.langdropdown a {
+  margin: 0.2%;
+  color: white;
+}
+
+.langdropdown a:hover {
+  color: yellow;
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
@@ -775,6 +807,15 @@ a:hover {
   .stng {
     font-weight: bold;
     text-decoration: underline;
+  }
+  .foonl {
+    display: inline;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 15%;
   }
 }
 body {

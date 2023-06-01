@@ -116,8 +116,18 @@
   .youtubeVoisin {
     margin-left: 20%;
   }
-  
-
+  .langdropdown {
+    margin-left: 3%;
+  }
+  .langdropdown a {
+    margin: 0.2%;
+    color: white;
+    
+  }
+  .langdropdown a:hover {
+    color: yellow;
+  }
+ 
   @media screen and (min-width : 300px) and (max-width : 1000px) {
   
 
@@ -508,5 +518,13 @@
     
   }
     
-    
+  .foonl {
+    display: inline;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 15%;
+  }
     }

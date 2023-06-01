@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruxelles / Contact</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/bea07da996.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Fira+Sans:wght@100;400&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="bivnBruxelles">   
+
+        
+
+            <a href="en_accueil.html"><img src="images/Bruxelles-stad.png" class="logoBruxelles" alt="logo de bruxelles"></a>
+            
+            <nav class="liste">
+                <a href="https://www.calameo.com/read/0010576450c4dcd4269c4" class="NECP">NEWSPAPER</a>
+                <a href="en_event.html" class="NECP">EVENTS</a>
+                <a href="en_contact.html" class="NECP">CONTACT</a>
+                <a href="https://www.belgium.be/fr/services_en_ligne" class="NECP">PORTAL</a>
+                <button onclick="toggleDarkMode()" id="dark">
+                    <span id="darkModeIcon">🌙</span></button>
+            
+                   
+                        </nav>
+                         <!-- navbar version mobile -->
+
+<nav class="mobile-menu">
+    <div class="dropdown">
+      <button class="fa fa-bars dropbtn"></button>
+      <div class="dropdown-content">
+        <a href="https://www.calameo.com/read/0010576450c4dcd4269c4">NEWSPAPER</a>
+        <a href="en_evenement.html">EVENTS</a>
+        <a href="en_contact.html">CONTACT</a>
+        <a href="https://www.belgium.be/fr/services_en_ligne">PORTAL</a>
+      </div>
+    </div>
+  </nav>              
+    </header><br><br><br>
+    
+        <form method="post" action="#">
+
+        <div class="formNous">
+
+        <h2>CONTACT US</h2>
+
+        <p class="ameliorations">
+            In order to offer ever more qualitative services for all our users. You can send us via the form below, the areas of improvement that you consider interesting to further develop our city.<br><br>We will then study the relevance and feasibility of your ideas.</p>
+        </div>
+
+        <div class="formulaire">
+
+        <div class="imageFormulaire">
+            <img src="images/Bruxelles-stad.png" alt="" class="logoBruxelles">
+        </div><br>
+
+        <!--Civilité-->
+        <label for="civil"><strong>Civility</strong></label>
+
+        <select name="civilité" id="civil" class="input22">
+            <option value="" selected>...</option>
+            <option value="Madame">Mrs.</option>
+            <option value="Monsieur">Mr.</option>
+
+        </select>
+
+        <pre></pre>
+
+            <!--Prénom-->
+        <label for="firstname"><strong>First name</strong></label>
+        <input type="text" name="Prénom" maxlength="30"  id="firstname" placeholder ='Your first name...' autofocus class="input22" required> 
+
+        <pre></pre>
+
+            <!--Nom-->
+
+        <label for="nameinput"><strong>Last name </strong></label>
+        <input type="text" name="Nom" id="nameinput"  maxlength="30" class="input22" placeholder="Your last name..." required>
+
+        <pre></pre>
+
+            <!--Âge-->
+
+        <label for="age"><strong>Age </strong></label>
+        <input type="number" id="age" name="Âge" min="0" max="100" class="input22" placeholder="Your age..." required>
+
+        <pre></pre>
+
+            <!--Email-->
+
+        <label for="emailinput"><strong>Enter your email :</strong></label>
+        <input type="email" id="emailinput" name="email" placeholder="contact@demo.com" class="input22">
+
+        <pre></pre>
+            <!--Nationalié-->
+            <label><strong>Nationality :</strong></label>
+            <select name="country" class="input22">
+                <optgroup label="Africa">
+                    <!--African countries-->
+                    <option value="djibouti">Djiboutian</option> 
+                    <option value="marocco">Moroccan</option>
+                    <option value="nigeria">Nigerian</option>
+                    <option value="uganda">Ugandan</option>
+                    <option value="tanzania">Tanzanian</option>
+                </optgroup>
+                <optgroup label="America">
+                    <!--American countries-->
+                    <option value="brazil">Bresilian</option> 
+                    <option value="ecuador">Ecuadorian</option>
+                    <option value="haiti">Haitian</option> 
+                    <option value="mexico">Mexican</option>
+                    <option value="peru">Peruvian</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <!--Asian countries-->
+                    <option value="japan">Japanese</option>
+                    <option value="pakistan">Pakistani</option>
+                    <option value="palestine" selected>Palestinian</option>
+                    <option value="saoudia">Saudis</option>
+                    <option value="southkorea">South Korean</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <!--European countries-->
+                    <option value="albania">Albanian</option>
+                    <option value="denmark">Dannish</option>
+                    <option value="estonia">Estonian</option>
+                    <option value="france">French</option>
+                    <option value="italy">Italian</option>
+                </optgroup>
+                <optgroup label="Oceania">
+                    <!--Oceanian countries-->
+                    <option value="australia">Australian</option>
+                    <option value="fiji">Fijian</option>
+                    <option value="micronesia">Micronesian</option>
+                    <option value="newzealand">New Zealand</option>
+                    <option value="tonga">Tongan</option>
+                    </optgroup>
+            </select>
+
+            <pre></pre>
+
+            <!--Datde de naissance-->
+            <label><strong>Date of birth</strong></label>
+            <input type="date" class="input22">
+
+            <pre></pre>
+
+            <label><strong>Your message :</strong></label>
+            <textarea name="message" cols="30" rows="10" placeholder="Message..."></textarea><br>
+
+            <input type="submit" value="Submit" class="envoyer">
+
+        </div><br>
+    
+    
+    
+    </form>
+
+    <div class="formNous">
+
+        <h2 class="gen">GENERAL CONTACT</h2>
+        <p class="gen">02 279 22 11</p>
+        <h2 class="gen">CONTACT AN ELECTED REPRESENTATIVE OR SERVICE</h2>
+        <p class="contactTel">To contact an elected representative or an administrative department by mail, telephone or e-mail, you should use the information supplied on the pages concerned:</p>
+        <div class="contactDirect">
+                <a href="https://www.brussels.be/board-mayor-and-aldermen?_ga=2.239277637.757508140.1685437703-599444007.1684764046">Mayor</a>
+                <a href="https://www.brussels.be/board-mayor-and-aldermen?_ga=2.239277637.757508140.1685437703-599444007.1684764046">Aldermen</a>
+                <a href="https://www.brussels.be/city-councillors?_ga=2.203038423.757508140.1685437703-599444007.1684764046">City Councillors</a>
+                <a href="https://www.brussels.be/management-administration?_ga=2.203038423.757508140.1685437703-599444007.1684764046">Municipal Secretary</a>
+                <a href="https://www.brussels.be/administrative-departments?_ga=2.228381275.757508140.1685437703-599444007.1684764046">Administrative departments</a>
+                <a href="https://www.brussels.be/magazine-le-brusseleir?_ga=2.240959045.757508140.1685437703-599444007.1684764046">Magazine Le Brusseleir</a>
+        </div>
+        
+            
+
+    </div>
+
+   
+
+    <button onclick="scrollToTop()" id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    
+    <footer>
+        <div class="langdropdown">
+            <a href="fr_contact.html">FR</a>  
+            <a href="nl_contact.html">NL</a>
+            <a href="en_contact.html">EN</a>
+    </div>
+    <a href="https://twitter.com/CityBrussels"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.facebook.com/BXLbrusselscity/"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/bxl_online/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.youtube.com/channel/UC7YWA0rVhvyms5YsvYZiSeA"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@bxl_online"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://open.spotify.com/user/bxl_online?si=3e0a3215512b477d&nd=1"><i class="fa-brands fa-spotify"></i></a>
+    <p class="brucity">Brucity Administrative Centre - Rue des Halles 4 - 1000 Brussels</p>
+    
+    
+    <a href="https://www.brussels.be/unesco-world-heritage"><img class="patrimoine" src="images/patrimoin.png" alt="patrimoine"></a>
+    <a href="https://www.brussels.be/animal-friendly-municipality-label"><img class="animalsfriends" src="images/amieanimaux-removebg-preview.png" alt="amie des animaux"></a> <br>
+    <a href="https://www.brussels.be/unesco-world-heritage"><img class="unesco" src="images/unesco.png" alt="unesco"></a>
+    
+        
+        <img class="citybxl" src="images/ville-bxl.png" alt="ville de ">
+        <ul class="foo">
+            <li class="cpumlca"><a href="en_contact.html">CONTACT</a></li>
+            <li class="cpumlca"><a href="https://www.brussels.be/journalist">PRESS SERVICES</a></li>
+            <li class="cpumlca"><a href="https://www.brussels.be/emergency-services">EMERGENCY</a></li>
+            <li class="cpumlca"><a href="https://www.brussels.be/legal-notes">PRIVACY</a></li>
+            <li class="cpumlca"><a  href="https://www.brussels.be/legal-notes">LEGAL NOTES</a></li>
+             <li class="cpumlca"><a  href="https://www.brussels.be/accessibility-statement">ACCESSIBILITY</a></li>
+            
+        </ul>
+    <p class="obcn">Site created and hosted by <a class="stng" href="https://github.com/BenoitDeud/Bruxelles-je-t-aime">OBCN</a></p>
+    
+        </footer>
+    
+</body>
+
+</html>
