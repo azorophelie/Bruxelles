@@ -4,6 +4,7 @@
     line-height: 25px;
     width: 900px;
     text-align: justify;
+    
   }
   
   .formulaire {
@@ -13,10 +14,15 @@
     width: 35%;
     margin-left: 30%;
     margin-right: 30%;
-    border: solid black 2px;
+    border: solid white 2px;
+    color: white;
     padding: 50px;
-    background-color: rgba(234, 234, 234, 0.887);
+    background-image:url(images/atomium.jpg);
+    background-size: cover;
+    filter: grayscale(80%)
+    
   }
+
   .formulaire .logoBruxelles {
     width: 150px;
     height: 75px;
