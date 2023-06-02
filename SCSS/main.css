@@ -498,8 +498,7 @@ a:hover {
 }
 
 .langdropdown a {
-  margin: 0.2%;
-  color: white;
+  color: black;
 }
 
 .langdropdown a:hover {
@@ -517,7 +516,10 @@ a:hover {
     justify-content: space-between;
   }
   #dark {
-    margin-left: -120%;
+    margin-left: -125%;
+  }
+  .langdropdown {
+    width: 100px;
   }
   html {
     overflow-x: hidden;
@@ -706,6 +708,7 @@ a:hover {
   }
   /*----------------PAGE CONTACT MOBILE----------------*/
   .formNous {
+    font-size: 17px;
     line-height: 25px;
     width: 100%;
     margin-left: 2%;

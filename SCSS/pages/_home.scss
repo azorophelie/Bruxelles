@@ -19,7 +19,9 @@
     color: rgb(0, 0, 0);
     width: 70%;
     text-shadow: -1px -1px 0 rgb(255, 255, 255);
+    
   }
+  
 
   .decouvrezBruxelles {
     margin-left: 20em;
@@ -120,8 +122,8 @@
     margin-left: 3%;
   }
   .langdropdown a {
-    margin: 0.2%;
-    color: white;
+    
+    color: black;
     
   }
   .langdropdown a:hover {
@@ -143,7 +145,11 @@
       
     }
     #dark {
-      margin-left: -120%;
+      margin-left: -125%;
+      
+    }
+    .langdropdown {
+      width: 100px;
       
     }
   html {
@@ -393,7 +399,7 @@
   
   /*----------------PAGE CONTACT MOBILE----------------*/
   .formNous {
-    
+    font-size: 17px;
     line-height: 25px;
     width: 100%;
     margin-left: 2%;
