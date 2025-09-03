@@ -43,7 +43,7 @@ Avant de lancer le projet, assurez-vous d’avoir :
 - **Styles** : `SCSS/styles.scss` (tous les styles du site)  
 - **Scripts** : `JS/script.js` (mode sombre et bouton recherche)  
 
-## Auteur
+## Auteurs
 
 Projet réalisé en **équipe de 4 personnes**.
 - Benoit
